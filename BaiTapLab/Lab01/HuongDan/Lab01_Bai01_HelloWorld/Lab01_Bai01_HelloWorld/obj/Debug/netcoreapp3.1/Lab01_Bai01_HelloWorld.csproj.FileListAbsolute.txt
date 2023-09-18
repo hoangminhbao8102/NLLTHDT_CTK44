@@ -1,0 +1,14 @@
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai01_HelloWorld\Lab01_Bai01_HelloWorld\bin\Debug\netcoreapp3.1\Lab01_Bai01_HelloWorld.exe
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai01_HelloWorld\Lab01_Bai01_HelloWorld\bin\Debug\netcoreapp3.1\Lab01_Bai01_HelloWorld.deps.json
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai01_HelloWorld\Lab01_Bai01_HelloWorld\bin\Debug\netcoreapp3.1\Lab01_Bai01_HelloWorld.runtimeconfig.json
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai01_HelloWorld\Lab01_Bai01_HelloWorld\bin\Debug\netcoreapp3.1\Lab01_Bai01_HelloWorld.runtimeconfig.dev.json
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai01_HelloWorld\Lab01_Bai01_HelloWorld\bin\Debug\netcoreapp3.1\Lab01_Bai01_HelloWorld.dll
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai01_HelloWorld\Lab01_Bai01_HelloWorld\bin\Debug\netcoreapp3.1\Lab01_Bai01_HelloWorld.pdb
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai01_HelloWorld\Lab01_Bai01_HelloWorld\obj\Debug\netcoreapp3.1\Lab01_Bai01_HelloWorld.csproj.AssemblyReference.cache
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai01_HelloWorld\Lab01_Bai01_HelloWorld\obj\Debug\netcoreapp3.1\Lab01_Bai01_HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai01_HelloWorld\Lab01_Bai01_HelloWorld\obj\Debug\netcoreapp3.1\Lab01_Bai01_HelloWorld.AssemblyInfoInputs.cache
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai01_HelloWorld\Lab01_Bai01_HelloWorld\obj\Debug\netcoreapp3.1\Lab01_Bai01_HelloWorld.AssemblyInfo.cs
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai01_HelloWorld\Lab01_Bai01_HelloWorld\obj\Debug\netcoreapp3.1\Lab01_Bai01_HelloWorld.csproj.CoreCompileInputs.cache
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai01_HelloWorld\Lab01_Bai01_HelloWorld\obj\Debug\netcoreapp3.1\Lab01_Bai01_HelloWorld.dll
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai01_HelloWorld\Lab01_Bai01_HelloWorld\obj\Debug\netcoreapp3.1\Lab01_Bai01_HelloWorld.pdb
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai01_HelloWorld\Lab01_Bai01_HelloWorld\obj\Debug\netcoreapp3.1\Lab01_Bai01_HelloWorld.genruntimeconfig.cache

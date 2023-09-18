@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Lab01_Bai02_KhaiBaoBienVaHang/1.0.0": {
+        "runtime": {
+          "Lab01_Bai02_KhaiBaoBienVaHang.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lab01_Bai02_KhaiBaoBienVaHang/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,16 @@
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\bin\Debug\net5.0\Lab01_Bai04_CacPhepToan.exe
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\bin\Debug\net5.0\Lab01_Bai04_CacPhepToan.deps.json
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\bin\Debug\net5.0\Lab01_Bai04_CacPhepToan.runtimeconfig.json
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\bin\Debug\net5.0\Lab01_Bai04_CacPhepToan.runtimeconfig.dev.json
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\bin\Debug\net5.0\Lab01_Bai04_CacPhepToan.dll
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\bin\Debug\net5.0\Lab01_Bai04_CacPhepToan.pdb
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\obj\Debug\net5.0\Lab01_Bai04_CacPhepToan.csproj.AssemblyReference.cache
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\obj\Debug\net5.0\Lab01_Bai04_CacPhepToan.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\obj\Debug\net5.0\Lab01_Bai04_CacPhepToan.AssemblyInfoInputs.cache
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\obj\Debug\net5.0\Lab01_Bai04_CacPhepToan.AssemblyInfo.cs
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\obj\Debug\net5.0\Lab01_Bai04_CacPhepToan.csproj.CoreCompileInputs.cache
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\obj\Debug\net5.0\Lab01_Bai04_CacPhepToan.dll
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\obj\Debug\net5.0\refint\Lab01_Bai04_CacPhepToan.dll
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\obj\Debug\net5.0\Lab01_Bai04_CacPhepToan.pdb
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\obj\Debug\net5.0\Lab01_Bai04_CacPhepToan.genruntimeconfig.cache
+D:\Nguyên lý lập trình hướng đối tượng\Bài Tập\Bài Tập Lab\Lab01\Lab01_Bai04_CacPhepToan\Lab01_Bai04_CacPhepToan\obj\Debug\net5.0\ref\Lab01_Bai04_CacPhepToan.dll
