@@ -37,13 +37,13 @@ namespace Lab03_Bai04_TaoLopMenu
 
         public void NhapMang()
         {
-            Console.WriteLine("Nhập số lượng phần tử của mảng:");
+            Console.WriteLine("Nhap so luong phan tu cua mang:");
             int soPhanTu = int.Parse(Console.ReadLine());
             mang = new int[soPhanTu];
-            Console.WriteLine("Nhập các phần tử của mảng:");
+            Console.WriteLine("Nhap cac phan tu cua mang:");
             for (int i = 0; i < soPhanTu; i++)
             {
-                Console.Write("Phần tử thứ {0}: ", i + 1);
+                Console.Write("Phan tu thu {0}: ", i + 1);
                 mang[i] = int.Parse(Console.ReadLine());
             }
             soLuong = soPhanTu;
@@ -51,7 +51,7 @@ namespace Lab03_Bai04_TaoLopMenu
 
         public void XuatMang()
         {
-            Console.WriteLine("Các phần tử của mảng:");
+            Console.WriteLine("Cac phan tu cua mang:");
             for (int i = 0; i < soLuong; i++)
             {
                 Console.WriteLine(mang[i]);
@@ -60,7 +60,7 @@ namespace Lab03_Bai04_TaoLopMenu
 
         public void NhapNgauNhien()
         {
-            Console.WriteLine("Nhập số lượng phần tử của mảng:");
+            Console.WriteLine("Nhap so luong phan tu cua mang:");
             int soPhanTu = int.Parse(Console.ReadLine());
             mang = new int[soPhanTu];
             Random random = new Random();

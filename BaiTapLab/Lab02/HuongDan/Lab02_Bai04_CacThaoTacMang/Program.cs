@@ -14,7 +14,7 @@ namespace Lab02_Bai04_CacThaoTacMang
 
         static void NhapMang()
         {
-            Console.Write("NHap so luong phan tu cua mang : ");
+            Console.Write("Nhap so luong phan tu cua mang : ");
             SoLuong = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < SoLuong; i++)
