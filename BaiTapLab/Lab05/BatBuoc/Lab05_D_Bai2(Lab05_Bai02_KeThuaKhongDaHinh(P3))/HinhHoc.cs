@@ -10,6 +10,11 @@ namespace Lab05_D_Bai2_Lab05_Bai02_KeThuaKhongDaHinh_P3__
     {
         protected double canh;
 
+        public HinhHoc()
+        {
+            
+        }
+
         protected HinhHoc(double cd)
         {
             canh = cd;

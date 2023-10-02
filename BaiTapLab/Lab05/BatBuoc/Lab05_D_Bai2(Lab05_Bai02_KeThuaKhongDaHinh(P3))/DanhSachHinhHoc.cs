@@ -194,51 +194,117 @@ namespace Lab05_D_Bai2_Lab05_Bai02_KeThuaKhongDaHinh_P3__
 
         public int SoSanh(HinhHoc x, HinhHoc y, KieuSapXep ksx)
         {
-            if (ksx == KieuSapXep.TangTheoDienTich)
+            switch (ksx)
             {
-                double dtichX = LayDienTich(x);
-                double dtichY = LayDienTich(y);
-                if (dtichX < dtichY)
-                {
-                    return -1;
-                }
-                else if (dtichX > dtichY)
-                {
-                    return 1;
-                }
-                else
-                {
-                    return 0;
-                }
-            }
-            else if (ksx == KieuSapXep.GiamTheoDienTich)
-            {
-                double dtichX = LayDienTich(x);
-                double dtichY = LayDienTich(y);
-                if (dtichX > dtichY)
-                {
-                    return -1;
-                }
-                else if (dtichX < dtichY)
-                {
-                    return 1;
-                }
-                else
-                {
-                    return 0;
-                }
-            }
-            else if (ksx == KieuSapXep.SapTheoHinhVuongTangTheoDienTich)
-            {
-                if (x is HinhVuong && y is HinhVuong)
-                {
-                    double dtichX = LayDienTich(x);
-                    double dtichY = LayDienTich(y);
-                    if (dtichX < dtichY)
+                case KieuSapXep.TangTheoDienTich:
+                    if (x.TinhDienTich() == y.TinhDienTich())
+                    {
+                        return 0;
+                    }
+                    else if (x.TinhDienTich() < y.TinhDienTich())
                     {
                         return -1;
                     }
-                    else if (dtichX > dtichY)
+                    else
+                    {
+                        return 1;
+                    }
+                case KieuSapXep.GiamTheoDienTich:
+                    if (x.TinhDienTich() == y.TinhDienTich())
+                    {
+                        return 0;
+                    }
+                    else if (x.TinhDienTich() > y.TinhDienTich())
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 1;
+                    }
+                case KieuSapXep.SapTheoHinhVuongTangTheoCanh:
+                    if (x is HinhVuong && y is HinhVuong)
+                    {
+                        double canhX = ((HinhVuong)x).ChieuDai;
+                        double canhY = ((HinhVuong)y).ChieuDai;
+                        if (canhX < canhY)
+                        {
+                            return -1;
+                        }
+                        else if (canhX > canhY)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else if (x is HinhVuong)
+                    {
+                        return 1;
+                    }
+                    else if (y is HinhVuong)
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                case KieuSapXep.SapTheoHinhVuongGiamTheoCanh:
+                    if (x is HinhVuong && y is HinhVuong)
+                    {
+                        double canhX = ((HinhVuong)x).ChieuDai;
+                        double canhY = ((HinhVuong)y).ChieuDai;
+                        if (canhX > canhY)
+                        {
+                            return -1;
+                        }
+                        else if (canhX < canhY)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else if (x is HinhVuong)
+                    {
+                        return 1;
+                    }
+                    else if (y is HinhVuong)
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                case KieuSapXep.SapTheoHinhVuongTangTheoDienTich:
+                    if (x is HinhVuong && y is HinhVuong)
+                    {
+                        double dtichX = LayDienTich(x);
+                        double dtichY = LayDienTich(y);
+                        if (dtichX < dtichY)
+                        {
+                            return -1;
+                        }
+                        else if (dtichX > dtichY)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else if (x is HinhVuong)
+                    {
+                        return -1;
+                    }
+                    else if (y is HinhVuong)
                     {
                         return 1;
                     }
@@ -246,31 +312,29 @@ namespace Lab05_D_Bai2_Lab05_Bai02_KeThuaKhongDaHinh_P3__
                     {
                         return 0;
                     }
-                }
-                else if (x is HinhVuong)
-                {
-                    return -1;
-                }
-                else if (y is HinhVuong)
-                {
-                    return 1;
-                }
-                else
-                {
-                    return 0;
-                }
-            }
-            else if (ksx == KieuSapXep.SapTheoHinhTronGiamTheoBanKinh)
-            {
-                if (x is HinhTron && y is HinhTron)
-                {
-                    double banKinhX = ((HinhTron)x).BanKinh;
-                    double banKinhY = ((HinhTron)y).BanKinh;
-                    if (banKinhX > banKinhY)
+                case KieuSapXep.SapTheoHinhVuongGiamTheoDienTich:
+                    if (x is HinhVuong && y is HinhVuong)
+                    {
+                        double dtichX = LayDienTich(x);
+                        double dtichY = LayDienTich(y);
+                        if (dtichX > dtichY)
+                        {
+                            return -1;
+                        }
+                        else if (dtichX < dtichY)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else if (x is HinhVuong)
                     {
                         return -1;
                     }
-                    else if (banKinhX < banKinhY)
+                    else if (y is HinhVuong)
                     {
                         return 1;
                     }
@@ -278,23 +342,308 @@ namespace Lab05_D_Bai2_Lab05_Bai02_KeThuaKhongDaHinh_P3__
                     {
                         return 0;
                     }
-                }
-                else if (x is HinhTron)
-                {
-                    return 1;
-                }
-                else if (y is HinhTron)
-                {
-                    return -1;
-                }
-                else
-                {
+                case KieuSapXep.SapTheoHinhTronTangTheoBanKinh:
+                    if (x is HinhTron && y is HinhTron)
+                    {
+                        double banKinhX = ((HinhTron)x).BanKinh;
+                        double banKinhY = ((HinhTron)y).BanKinh;
+                        if (banKinhX < banKinhY)
+                        {
+                            return -1;
+                        }
+                        else if (banKinhX > banKinhY)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else if (x is HinhTron)
+                    {
+                        return 1;
+                    }
+                    else if (y is HinhTron)
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                case KieuSapXep.SapTheoHinhTronGiamTheoBanKinh:
+                    if (x is HinhTron && y is HinhTron)
+                    {
+                        double banKinhX = ((HinhTron)x).BanKinh;
+                        double banKinhY = ((HinhTron)y).BanKinh;
+                        if (banKinhX > banKinhY)
+                        {
+                            return -1;
+                        }
+                        else if (banKinhX < banKinhY)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else if (x is HinhTron)
+                    {
+                        return 1;
+                    }
+                    else if (y is HinhTron)
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                case KieuSapXep.SapTheoHinhTronTangTheoDienTich:
+                    if (x is HinhTron && y is HinhTron)
+                    {
+                        double dtichX = LayDienTich(x);
+                        double dtichY = LayDienTich(y);
+                        if (dtichX < dtichY)
+                        {
+                            return -1;
+                        }
+                        else if (dtichX > dtichY)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else if (x is HinhTron)
+                    {
+                        return -1;
+                    }
+                    else if (y is HinhTron)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                case KieuSapXep.SapTheoHinhTronGiamTheoDienTich:
+                    if (x is HinhTron && y is HinhTron)
+                    {
+                        double dtichX = LayDienTich(x);
+                        double dtichY = LayDienTich(y);
+                        if (dtichX > dtichY)
+                        {
+                            return -1;
+                        }
+                        else if (dtichX < dtichY)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else if (x is HinhTron)
+                    {
+                        return -1;
+                    }
+                    else if (y is HinhTron)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                case KieuSapXep.SapTheoHinhChuNhatTangTheoChieuDai:
+                    if (x is HinhChuNhat && y is HinhChuNhat)
+                    {
+                        double chieuDaiX = ((HinhChuNhat)x).ChieuDai;
+                        double chieuDaiY = ((HinhChuNhat)y).ChieuDai;
+                        if (chieuDaiX < chieuDaiY)
+                        {
+                            return -1;
+                        }
+                        else if (chieuDaiX > chieuDaiY)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else if (x is HinhChuNhat)
+                    {
+                        return 1;
+                    }
+                    else if (y is HinhChuNhat)
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                case KieuSapXep.SapTheoHinhChuNhatGiamTheoChieuDai:
+                    if (x is HinhChuNhat && y is HinhChuNhat)
+                    {
+                        double chieuDaiX = ((HinhChuNhat)x).ChieuDai;
+                        double chieuDaiY = ((HinhChuNhat)y).ChieuDai;
+                        if (chieuDaiX > chieuDaiY)
+                        {
+                            return -1;
+                        }
+                        else if (chieuDaiX < chieuDaiY)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else if (x is HinhChuNhat)
+                    {
+                        return 1;
+                    }
+                    else if (y is HinhChuNhat)
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                case KieuSapXep.SapTheoHinhChuNhatTangTheoChieuRong:
+                    if (x is HinhChuNhat && y is HinhChuNhat)
+                    {
+                        double chieuRongX = ((HinhChuNhat)x).ChieuRong;
+                        double chieuRongY = ((HinhChuNhat)y).ChieuRong;
+                        if (chieuRongX < chieuRongY)
+                        {
+                            return -1;
+                        }
+                        else if (chieuRongX > chieuRongY)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else if (x is HinhChuNhat)
+                    {
+                        return 1;
+                    }
+                    else if (y is HinhChuNhat)
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                case KieuSapXep.SapTheoHinhChuNhatGiamTheoChieuRong:
+                    if (x is HinhChuNhat && y is HinhChuNhat)
+                    {
+                        double chieuRongX = ((HinhChuNhat)x).ChieuRong;
+                        double chieuRongY = ((HinhChuNhat)y).ChieuRong;
+                        if (chieuRongX > chieuRongY)
+                        {
+                            return -1;
+                        }
+                        else if (chieuRongX < chieuRongY)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else if (x is HinhChuNhat)
+                    {
+                        return 1;
+                    }
+                    else if (y is HinhChuNhat)
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                case KieuSapXep.SapTheoHinhChuNhatTangTheoDienTich:
+                    if (x is HinhChuNhat && y is HinhChuNhat)
+                    {
+                        double dtichX = LayDienTich(x);
+                        double dtichY = LayDienTich(y);
+                        if (dtichX < dtichY)
+                        {
+                            return -1;
+                        }
+                        else if (dtichX > dtichY)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else if (x is HinhChuNhat)
+                    {
+                        return -1;
+                    }
+                    else if (y is HinhChuNhat)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                case KieuSapXep.SapTheoHinhChuNhatGiamTheoDienTich:
+                    if (x is HinhChuNhat && y is HinhChuNhat)
+                    {
+                        double dtichX = LayDienTich(x);
+                        double dtichY = LayDienTich(y);
+                        if (dtichX > dtichY)
+                        {
+                            return -1;
+                        }
+                        else if (dtichX < dtichY)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return 0;
+                        }
+                    }
+                    else if (x is HinhChuNhat)
+                    {
+                        return -1;
+                    }
+                    else if (y is HinhChuNhat)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                default:
                     return 0;
-                }
-            }
-            else
-            {
-                return 0;
             }
         }
 
