@@ -165,26 +165,6 @@ namespace Lab05_D_Bai2_Lab05_Bai02_KeThuaKhongDaHinh_P3__
             }
         }
 
-        public enum KieuSapXep
-        {
-            TangTheoDienTich,
-            GiamTheoDienTich,
-            SapTheoHinhVuongTangTheoCanh,
-            SapTheoHinhVuongGiamTheoCanh,
-            SapTheoHinhVuongTangTheoDienTich,
-            SapTheoHinhVuongGiamTheoDienTich,
-            SapTheoHinhTronTangTheoBanKinh,
-            SapTheoHinhTronGiamTheoBanKinh,
-            SapTheoHinhTronTangTheoDienTich,
-            SapTheoHinhTronGiamTheoDienTich,
-            SapTheoHinhChuNhatTangTheoChieuDai,
-            SapTheoHinhChuNhatGiamTheoChieuDai,
-            SapTheoHinhChuNhatTangTheoChieuRong,
-            SapTheoHinhChuNhatGiamTheoChieuRong,
-            SapTheoHinhChuNhatTangTheoDienTich,
-            SapTheoHinhChuNhatGiamTheoDienTich
-        }
-
         public void HoanVi(ref HinhHoc x, ref HinhHoc y)
         {
             HinhHoc temp = x;
