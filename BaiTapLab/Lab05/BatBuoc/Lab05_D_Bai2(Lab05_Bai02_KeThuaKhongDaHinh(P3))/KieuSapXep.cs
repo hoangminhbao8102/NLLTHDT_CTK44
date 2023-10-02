@@ -8,7 +8,7 @@ namespace Lab05_D_Bai2_Lab05_Bai02_KeThuaKhongDaHinh_P3__
 {
     enum KieuSapXep
     {
-        TangTheoDienTich,
+        TangTheoDienTich = 1,
         GiamTheoDienTich,
         SapTheoHinhVuongTangTheoCanh,
         SapTheoHinhVuongGiamTheoCanh,
