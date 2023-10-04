@@ -24,12 +24,24 @@ namespace Lab07_QuanLySachBao_Lab07_HuongDan_
 
         public bool ChuaChuoi(string giaTri)
         {
-            return true;
+            for (int i = 0; i < soLuong; i++)
+            {
+                if (danhSach[i] == giaTri)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         public static implicit operator MangChuoi(string[] cacChuoi)
         {
-            return new MangChuoi();
+            MangChuoi mang = new MangChuoi(cacChuoi);
+            for (int i = 0; i < cacChuoi.Length; i++)
+            {
+                mang[i] = cacChuoi[i];
+            }
+            return mang;
         }
 
         public MangChuoi() 
@@ -40,18 +52,29 @@ namespace Lab07_QuanLySachBao_Lab07_HuongDan_
 
         public MangChuoi(string[] cacChuoi)
         {
-            danhSach = cacChuoi;
-            soLuong = 0;
+            danhSach = new string[cacChuoi.Length];
+            soLuong = cacChuoi.Length;
+            for (int i = 0; i < cacChuoi.Length; i++)
+            {
+                danhSach[i] = cacChuoi[i];
+            }
         }
 
         public void Them(string chuoi)
         {
-
+            Array.Resize(ref danhSach, soLuong + 1);
+            danhSach[soLuong] = chuoi;
+            soLuong++;
         }
 
         public override string ToString()
         {
-            return base.ToString();
+            string result = "";
+            for (int i = 0; i < soLuong; i++)
+            {
+                result += danhSach[i] + " ";
+            }
+            return result.Trim();
         }
     }
 }

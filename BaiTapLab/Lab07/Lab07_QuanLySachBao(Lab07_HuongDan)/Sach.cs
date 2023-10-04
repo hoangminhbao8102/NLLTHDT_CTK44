@@ -20,7 +20,7 @@ namespace Lab07_QuanLySachBao_Lab07_HuongDan_
 
         public override bool LaCongTrinhCua(string tenTacGia)
         {
-            throw new NotImplementedException();
+            return _tacGia.ChuaChuoi(tenTacGia);
         }
 
         public Sach()
@@ -38,6 +38,7 @@ namespace Lab07_QuanLySachBao_Lab07_HuongDan_
             _nhanDe = tuade;
             _namXb = namxb;
             _nhaXb = nhaXb;
+            _tacGia = new MangChuoi();
         }
 
         public Sach(string maso, string tuade, int namxb, string nhaXb, string[] cacTacGia)
@@ -46,7 +47,7 @@ namespace Lab07_QuanLySachBao_Lab07_HuongDan_
             _nhanDe = tuade;
             _namXb = namxb;
             _nhaXb = nhaXb;
-            _tacGia = cacTacGia;
+            _tacGia = new MangChuoi(cacTacGia);
         }
     }
 }

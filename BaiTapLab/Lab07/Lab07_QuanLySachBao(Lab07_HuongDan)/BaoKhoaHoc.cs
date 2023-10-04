@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +33,7 @@ namespace Lab07_QuanLySachBao_Lab07_HuongDan_
             _nhanDe = tuade;
             _namXb = namxb;
             _hoiNghi = hoiNghi;
+            _tacGia = new MangChuoi();
         }
 
         public BaoKhoaHoc(string maso, string tuade, int namxb, string hoiNghi, string[] cacTacGia)
@@ -40,22 +42,23 @@ namespace Lab07_QuanLySachBao_Lab07_HuongDan_
             _nhanDe = tuade;
             _namXb = namxb;
             _hoiNghi = hoiNghi;
-            _tacGia = cacTacGia;
+            _tacGia = new MangChuoi(cacTacGia);
         }
 
         public override bool LaCongTrinhCua(string tenTacGia)
         {
-            throw new NotImplementedException();
+            return _tacGia.ChuaChuoi(tenTacGia);
         }
 
         public void ThemTacGia(string tenTg)
         {
-
+            _tacGia.Them(tenTg);
         }
 
         public override string ToString()
         {
-            return base.ToString();
+            string result = $"Mã số: {_maSo}\nTựa đề: {_nhanDe}\nNăm xuất bản: {_namXb}\nHội nghị: {_hoiNghi}\nTác giả: {_tacGia.ToString()}";
+            return result;
         }
     }
 }
