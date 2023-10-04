@@ -8,5 +8,29 @@ namespace Lab07_QuanLySachBao_Lab07_HuongDan_
 {
     public class DuLieuNguon
     {
+        private static BoDocDuLieu _boDoc;
+
+        static DuLieuNguon()
+        {
+            string cauHinh = System.IO.File.ReadAllText(@"Data\CauHinh.txt");
+
+            switch (cauHinh) 
+            {
+                case "taptin":
+                    _boDoc = new BoDocDuLieuTuFile(@"Data\ThuVien.txt");
+                    break;
+                case "banphim":
+                    _boDoc = new BoDocDuLieuTuBanPhim();
+                    break;
+                case "dulieugia":
+                    _boDoc = new BoDocDuLieuGia();
+                    break;
+            }
+        }
+
+        public static DanhSachTaiLieu TaoDanhSach()
+        {
+            return _boDoc.DocDuLieu();
+        }
     }
 }
