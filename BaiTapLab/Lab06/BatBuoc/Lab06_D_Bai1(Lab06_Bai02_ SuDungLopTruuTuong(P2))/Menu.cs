@@ -117,11 +117,60 @@ namespace Lab06_D_Bai1_Lab06_Bai02__SuDungLopTruuTuong_P2__
                     hinhLonNhatTheoLoai.Xuat();
                     break;
                 case ChucNang.TimViTriCuaHinh:
-                    Console.WriteLine("Nhap thong tin hinh can tim vi tri: ");
-                    // Nhập thông tin hình h
-                    HinhHoc hinh = new HinhHoc();
-                    int viTri = dsHinhHoc.TimViTriCuaHinh(hinh);
-                    Console.WriteLine("Vi tri cua hinh: {0}", viTri);
+                    Console.Write("Nhap thong tin hinh can tim vi tri:");
+                    Console.Write("Loai hinh (1 - Hinh tron, 2 - Hinh vuong, 3 - Hinh chu nhat): ");
+                    int loaiHinh = int.Parse(Console.ReadLine());
+                    LoaiHinh kieuTimHinh = (LoaiHinh)loaiHinh;
+                    switch (kieuTimHinh)
+                    {
+                        case LoaiHinh.HinhVuong:
+                            Console.Write("Nhap canh cua hinh vuong: ");
+                            double canhHV = double.Parse(Console.ReadLine());
+                            HinhVuong hv = new HinhVuong(canhHV);
+                            int viTriHV = dsHinhHoc.TimViTriCuaHinh(hv);
+                            if (viTriHV != -1)
+                            {
+                                Console.WriteLine($"Hinh vuong co canh {canhHV} duoc tim thay tai vi tri {viTriHV + 1} trong danh sach.");
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Hinh vuong co canh {canhHV} khong ton tai trong danh sach.");
+                            }
+                            break;
+                        case LoaiHinh.HinhChuNhat:
+                            Console.Write("Nhap chieu dai cua hinh chu nhat: ");
+                            double chieuDaiHCN = double.Parse(Console.ReadLine());
+                            Console.Write("Nhap chieu rong cua hinh chu nhat: ");
+                            double chieuRongHCN = double.Parse(Console.ReadLine());
+                            HinhChuNhat hcn = new HinhChuNhat(chieuDaiHCN, chieuRongHCN);
+                            int viTriHCN = dsHinhHoc.TimViTriCuaHinh(hcn);
+                            if (viTriHCN != -1)
+                            {
+                                Console.WriteLine($"Hinh chu nhat co chieu dai {chieuDaiHCN} va chieu rong {chieuRongHCN} duoc tim thay tai vi tri {viTriHCN + 1} trong danh sach.");
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Hinh chu nhat co chieu dai {chieuDaiHCN} va chieu rong {chieuRongHCN} khong ton tai trong danh sach.");
+                            }
+                            break;
+                        case LoaiHinh.HinhTron:
+                            Console.Write("Nhap ban kinh cua hinh tron: ");
+                            double banKinhHT = double.Parse(Console.ReadLine());
+                            HinhTron ht = new HinhTron(banKinhHT);
+                            int viTriHT = dsHinhHoc.TimViTriCuaHinh(ht);
+                            if (viTriHT != -1)
+                            {
+                                Console.WriteLine($"Hinh tron co ban kinh {banKinhHT} duocc tim thay tai vi tri {viTriHT + 1} trong danh sach.");
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Hinh tron co ban kinh {banKinhHT} khong ton tai trong danh sach.");
+                            }
+                            break;
+                        default:
+                            Console.WriteLine("Lua chon khong hop le! Vui long nhap lai!");
+                            break;
+                    }
                     break;
                 case ChucNang.XoaTaiViTri:
                     Console.WriteLine("Nhap vi tri can xoa: ");
@@ -130,17 +179,66 @@ namespace Lab06_D_Bai1_Lab06_Bai02__SuDungLopTruuTuong_P2__
                     Console.WriteLine("Xoa tai vi tri {0}: {1}", viTriXoa, xoaTaiViTri);
                     break;
                 case ChucNang.TimHinhTheoDTich:
-                    Console.WriteLine("Nhap dien ttch can tim: ");
+                    Console.WriteLine("Nhap dien tich can tim: ");
                     double dt = double.Parse(Console.ReadLine());
                     DanhSachHinhHoc hinhTheoDT = dsHinhHoc.TimHinhTheoDTich(dt);
                     hinhTheoDT.Xuat();
                     break;
                 case ChucNang.XoaHinh:
                     Console.WriteLine("Nhap thong tin hinh can xoa: ");
-                    // Nhập thông tin hình h
-                    HinhHoc hinhXoa = new HinhHoc();
-                    bool xoaHinh = dsHinhHoc.XoaHinh(hinhXoa);
-                    Console.WriteLine("Xoa hinh: {0}", xoaHinh);
+                    Console.Write("Loai hinh (1 - Hinh tron, 2 - Hinh vuong, 3 - Hinh chu nhat): ");
+                    loaiHinh = int.Parse(Console.ReadLine());
+                    LoaiHinh kieuXoaHinh = (LoaiHinh)loaiHinh;
+                    switch (kieuXoaHinh)
+                    {
+                        case LoaiHinh.HinhVuong:
+                            Console.Write("Nhap canh cua hinh vuong: ");
+                            double canhHV = double.Parse(Console.ReadLine());
+                            HinhVuong hv = new HinhVuong(canhHV);
+                            bool ketQuaHV = dsHinhHoc.XoaHinh(hv);
+                            if (ketQuaHV)
+                            {
+                                Console.WriteLine($"Xoa hinh vuong co canh {canhHV} thanh cong!");
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Xoa hinh vuong co canh {canhHV} that bai!");
+                            }
+                            break;
+                        case LoaiHinh.HinhChuNhat:
+                            Console.Write("Nhập chiều dài của hình chữ nhật: ");
+                            double chieuDaiHCN = double.Parse(Console.ReadLine());
+                            Console.Write("Nhập chiều rộng của hình chữ nhật: ");
+                            double chieuRongHCN = double.Parse(Console.ReadLine());
+                            HinhChuNhat hcn = new HinhChuNhat(chieuDaiHCN, chieuRongHCN);
+                            bool ketQuaHCN = dsHinhHoc.XoaHinh(hcn);
+                            if (ketQuaHCN)
+                            {
+                                Console.WriteLine($"Xoa hinh chu nhat co chieu dai {chieuDaiHCN} va chieu rong {chieuRongHCN} thanh cong!");
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Xoa hinh chu nhat co chieu dai {chieuDaiHCN} va chieu rong {chieuRongHCN} that bai!");
+                            }
+                            break;
+                        case LoaiHinh.HinhTron:
+                            Console.Write("Nhập bán kính của hình tròn: ");
+                            double banKinhHT = double.Parse(Console.ReadLine());
+                            HinhTron ht = new HinhTron(banKinhHT);
+                            bool ketQuaHT = dsHinhHoc.XoaHinh(ht);
+                            if (ketQuaHT)
+                            {
+                                Console.WriteLine($"Xoa Hình tròn có bán kính {banKinhHT} thanh cong!");
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Xoa Hình tròn có bán kính {banKinhHT} that bai!");
+                            }
+                            break;
+                        default:
+                            Console.WriteLine("Lua chon khong hop le! Vui long nhap lai!");
+                            break;
+                    }
                     break;
                 case ChucNang.XoaHinhTheoLoai:
                     Console.WriteLine("Nhap loai hinh can xoa (1 - Hinh tron, 2 - Hinh vuong, 3 - Hinh chu nhat): ");

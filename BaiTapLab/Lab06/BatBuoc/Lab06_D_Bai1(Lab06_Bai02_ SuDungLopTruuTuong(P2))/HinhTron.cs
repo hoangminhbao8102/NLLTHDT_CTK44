@@ -13,7 +13,6 @@ namespace Lab06_D_Bai1_Lab06_Bai02__SuDungLopTruuTuong_P2__
             get { return canh; }
         }
 
-
         public HinhTron(double banKinh) : base(banKinh)
         {
 
