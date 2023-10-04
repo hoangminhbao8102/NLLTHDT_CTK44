@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace Lab07_QuanLySachBao_Lab07_HuongDan_
 
         public override bool LaCongTrinhCua(string tenTacGia)
         {
-            throw new NotImplementedException();
+            return _tacGia.Equals(tenTacGia);
         }
 
         public LuanVan() 
@@ -39,7 +40,7 @@ namespace Lab07_QuanLySachBao_Lab07_HuongDan_
 
         public override string ToString()
         {
-            return base.ToString();
+            return $"Ma so: {_maSo}, Tua de: {_nhanDe}, Nam xuat ban: {_namXb}, Tác giả: {_tacGia}";
         }
     }
 }

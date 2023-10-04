@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lab07_QuanLySachBao_Lab07_HuongDan_
 {
-    public class Program
+    public class BoDocDuLieuGia : BoDocDuLieu
     {
-        static void Main(string[] args)
+        public override DanhSachTaiLieu DocDuLieu()
         {
             DanhSachTaiLieu thuVien = new DanhSachTaiLieu();
 
@@ -17,9 +17,7 @@ namespace Lab07_QuanLySachBao_Lab07_HuongDan_
             thuVien.Them(new LuanVan("L100", "Khai thac luat ket hop", 2010, "Nguyen Thanh Tai"));
             thuVien.Them(new BaoKhoaHoc("B440", "Hop chat Canxi cacbonat", 2013, "FACON2013", new string[] { "Hai Au", "Trinh Toan" }));
 
-            Console.WriteLine(thuVien);
-
-            Console.ReadKey();
+            return thuVien;
         }
     }
 }

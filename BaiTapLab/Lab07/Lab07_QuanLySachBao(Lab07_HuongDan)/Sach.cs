@@ -49,5 +49,15 @@ namespace Lab07_QuanLySachBao_Lab07_HuongDan_
             _nhaXb = nhaXb;
             _tacGia = new MangChuoi(cacTacGia);
         }
+
+        public void ThemTacGia(string tenTg)
+        {
+            _tacGia.Them(tenTg);
+        }
+
+        public override string ToString()
+        {
+            return $"Ma so: {_maSo}, Tua de: {_nhanDe}, Nam xuat ban: {_namXb}, Nha xuat ban: {_nhaXb}, Tac gia: {_tacGia.ToString()}";
+        }
     }
 }

@@ -44,7 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaoKhoaHoc.cs" />
+    <Compile Include="BoDocDuLieu.cs" />
+    <Compile Include="BoDocDuLieuGia.cs" />
+    <Compile Include="BoDocDuLieuTuBanPhim.cs" />
+    <Compile Include="BoDocDuLieuTuFile.cs" />
     <Compile Include="DanhSachTaiLieu.cs" />
+    <Compile Include="DuLieuNguon.cs" />
     <Compile Include="LuanVan.cs" />
     <Compile Include="MangChuoi.cs" />
     <Compile Include="Program.cs" />
@@ -54,6 +59,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\CauHinh.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\ThuVien.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

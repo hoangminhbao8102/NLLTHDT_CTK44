@@ -30,22 +30,42 @@ namespace Lab07_QuanLySachBao_Lab07_HuongDan_
 
         public void Them(TaiLieu taiLieu)
         {
-
+            danhSach[soLuong] = taiLieu;
+            soLuong++;
         }
 
         public int TimViTriTaiLieu(string maSoTL)
         {
-            return soLuong;
+            for (int i = 0; i < soLuong; i++)
+            {
+                if (danhSach[i].MaSo == maSoTL)
+                {
+                    return i;
+                }
+            }
+            return -1;
         }
 
         public int TimViTriTaiLieu(TaiLieu taiLieu)
         {
-            return soLuong;
+            for (int i = 0; i < soLuong; i++)
+            {
+                if (danhSach[i] == taiLieu)
+                {
+                    return i;
+                }
+            }
+            return -1;
         }
 
         public override string ToString()
         {
-            return base.ToString();
+            string result = "";
+            for (int i = 0; i < soLuong; i++)
+            {
+                result += danhSach[i].ToString() + "\n";
+            }
+            return result;
         }
     }
 }

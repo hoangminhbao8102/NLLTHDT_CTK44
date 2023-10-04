@@ -57,7 +57,7 @@ namespace Lab07_QuanLySachBao_Lab07_HuongDan_
 
         public override string ToString()
         {
-            string result = $"Mã số: {_maSo}\nTựa đề: {_nhanDe}\nNăm xuất bản: {_namXb}\nHội nghị: {_hoiNghi}\nTác giả: {_tacGia.ToString()}";
+            string result = $"Ma so: {_maSo}\nTua de: {_nhanDe}\nNam xuat ban: {_namXb}\nHoi nghi: {_hoiNghi}\nTac gia: {_tacGia.ToString()}";
             return result;
         }
     }

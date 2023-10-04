@@ -1,0 +1,9 @@
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab07\Lab07_QuanLySachBao(Lab07_HuongDan)\bin\Debug\Lab07_QuanLySachBao(Lab07_HuongDan).exe.config
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab07\Lab07_QuanLySachBao(Lab07_HuongDan)\bin\Debug\Lab07_QuanLySachBao(Lab07_HuongDan).exe
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab07\Lab07_QuanLySachBao(Lab07_HuongDan)\bin\Debug\Lab07_QuanLySachBao(Lab07_HuongDan).pdb
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab07\Lab07_QuanLySachBao(Lab07_HuongDan)\obj\Debug\Lab07_QuanLySachBao(Lab07_HuongDan).csproj.AssemblyReference.cache
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab07\Lab07_QuanLySachBao(Lab07_HuongDan)\obj\Debug\Lab07_QuanLySachBao(Lab07_HuongDan).csproj.CoreCompileInputs.cache
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab07\Lab07_QuanLySachBao(Lab07_HuongDan)\obj\Debug\Lab07_QuanLySachBao(Lab07_HuongDan).exe
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab07\Lab07_QuanLySachBao(Lab07_HuongDan)\obj\Debug\Lab07_QuanLySachBao(Lab07_HuongDan).pdb
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab07\Lab07_QuanLySachBao(Lab07_HuongDan)\bin\Debug\Data\CauHinh.txt
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab07\Lab07_QuanLySachBao(Lab07_HuongDan)\bin\Debug\Data\ThuVien.txt
