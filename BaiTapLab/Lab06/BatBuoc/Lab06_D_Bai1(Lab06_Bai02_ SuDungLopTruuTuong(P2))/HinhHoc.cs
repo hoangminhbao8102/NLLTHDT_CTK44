@@ -9,12 +9,7 @@ namespace Lab06_D_Bai1_Lab06_Bai02__SuDungLopTruuTuong_P2__
     public abstract class HinhHoc
     {
         protected double canh;
-
-        protected HinhHoc()
-        {
-            
-        }
-
+        
         protected HinhHoc(double cd)
         {
             canh = cd;
