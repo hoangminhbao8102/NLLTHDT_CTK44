@@ -6,7 +6,31 @@ using System.Threading.Tasks;
 
 namespace Lab06_D_Bai1_Lab06_Bai02__SuDungLopTruuTuong_P2__
 {
-    public class HinhTron
+    public class HinhTron : HinhHoc
     {
+        public double BanKinh
+        {
+            get { return canh; }
+        }
+
+        public HinhTron(double banKinh) : base(banKinh)
+        {
+
+        }
+
+        public override double TinhChuVi()
+        {
+            return 2 * canh * Math.PI;
+        }
+
+        public override double TinhDienTich()
+        {
+            return canh * canh * Math.PI;
+        }
+
+        public override void Xuat()
+        {
+            Console.WriteLine("Hinh tron ban kinh {0}, dien tich = {1}", canh, TinhDienTich());
+        }
     }
 }

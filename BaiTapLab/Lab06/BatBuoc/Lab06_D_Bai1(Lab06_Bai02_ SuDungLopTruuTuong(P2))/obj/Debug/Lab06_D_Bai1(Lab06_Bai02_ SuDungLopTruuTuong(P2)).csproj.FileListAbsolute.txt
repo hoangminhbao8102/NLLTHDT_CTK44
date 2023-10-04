@@ -1,0 +1,2 @@
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab06\BatBuoc\Lab06_D_Bai1(Lab06_Bai02_ SuDungLopTruuTuong(P2))\obj\Debug\Lab06_D_Bai1(Lab06_Bai02_ SuDungLopTruuTuong(P2)).csproj.AssemblyReference.cache
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab06\BatBuoc\Lab06_D_Bai1(Lab06_Bai02_ SuDungLopTruuTuong(P2))\obj\Debug\Lab06_D_Bai1(Lab06_Bai02_ SuDungLopTruuTuong(P2)).csproj.CoreCompileInputs.cache

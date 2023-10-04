@@ -8,5 +8,9 @@ namespace Lab06_D_Bai1_Lab06_Bai02__SuDungLopTruuTuong_P2__
 {
     public enum LoaiHinh
     {
+        TatCa,
+        HinhTron,
+        HinhVuong,
+        HinhChuNhat
     }
 }
