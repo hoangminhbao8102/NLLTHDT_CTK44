@@ -517,14 +517,17 @@ namespace Lab07_D_Bai1_Lab07_QuanLySachBao_P2__
         public List<string> TimTacGiaBaoKhoaHocLuanVanKhongVietSach()
         {
             List<string> tacGiaBaoKhoaHocLuanVanKhongVietSach = new List<string>();
+            List<string> tacGiaVietSach = new List<string>(); // Khai báo và khởi tạo danh sách tacGiaVietSach
+
             foreach (TaiLieu taiLieu in danhSach)
             {
                 if (taiLieu is BaoKhoaHoc && taiLieu is LuanVan && !(taiLieu is Sach))
                 {
                     BaoKhoaHoc baoKhoaHoc = (BaoKhoaHoc)taiLieu;
                     LuanVan luanVan = (LuanVan)taiLieu;
-                    foreach (string tacGia in baoKhoaHoc.TacGia)
+                    foreach (char tacGiaChar in baoKhoaHoc.TacGia)
                     {
+                        string tacGia = tacGiaChar.ToString();
                         if (luanVan.TacGia.Contains(tacGia) && !tacGiaVietSach.Contains(tacGia))
                         {
                             tacGiaBaoKhoaHocLuanVanKhongVietSach.Add(tacGia);
