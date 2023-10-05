@@ -458,8 +458,9 @@ namespace Lab07_D_Bai1_Lab07_QuanLySachBao_P2__
             List<string> danhSachTacGia = new List<string>();
             foreach (TaiLieu taiLieu in danhSach)
             {
-                foreach (string tacGia in taiLieu.TacGia)
+                foreach (char tacGiaChar in taiLieu.TacGia)
                 {
+                    string tacGia = tacGiaChar.ToString();
                     if (!danhSachTacGia.Contains(tacGia))
                     {
                         danhSachTacGia.Add(tacGia);
