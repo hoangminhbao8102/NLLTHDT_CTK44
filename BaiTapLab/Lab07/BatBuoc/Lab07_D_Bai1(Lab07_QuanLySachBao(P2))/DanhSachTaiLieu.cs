@@ -439,7 +439,8 @@ namespace Lab07_D_Bai1_Lab07_QuanLySachBao_P2__
                     Sach sach = (Sach)taiLieu;
                     BaoKhoaHoc baoKhoaHoc = (BaoKhoaHoc)taiLieu;
                     LuanVan luanVan = (LuanVan)taiLieu;
-                    foreach (string tacGia in sach.TacGia)
+                    string[] tacGiaArray = Array.ConvertAll(sach.TacGia, c => c.ToString());
+                    foreach (string tacGia in tacGiaArray)
                     {
                         if (baoKhoaHoc.TacGia.Contains(tacGia) && luanVan.TacGia.Contains(tacGia))
                         {
