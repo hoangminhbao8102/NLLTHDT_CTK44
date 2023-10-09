@@ -10,9 +10,9 @@ namespace Lab07_D_Bai1_Lab07_QuanLySachBao_P2__
     {
         static void Main(string[] args)
         {
-            DanhSachTaiLieu thuVien = DuLieuNguon.TaoDanhSach();
+            Menu TrinhDon = new Menu();
 
-            Console.WriteLine(thuVien);
+            TrinhDon.Run();
 
             Console.ReadKey();
         }

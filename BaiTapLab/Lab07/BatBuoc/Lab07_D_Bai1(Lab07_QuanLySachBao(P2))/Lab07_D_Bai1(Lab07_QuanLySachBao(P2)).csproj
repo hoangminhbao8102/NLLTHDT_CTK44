@@ -48,10 +48,12 @@
     <Compile Include="BoDocDuLieuGia.cs" />
     <Compile Include="BoDocDuLieuTuBanPhim.cs" />
     <Compile Include="BoDocDuLieuTuFile.cs" />
+    <Compile Include="ChucNang.cs" />
     <Compile Include="DanhSachTaiLieu.cs" />
     <Compile Include="DuLieuNguon.cs" />
     <Compile Include="LuanVan.cs" />
     <Compile Include="MangChuoi.cs" />
+    <Compile Include="Menu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sach.cs" />
