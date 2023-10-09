@@ -53,8 +53,8 @@ namespace Lab08_Bai02_ThucThiNhieuGiaoDien
 
         public void ThuPhong(double tyLe)
         {
-            dai *= tyLe; 
-            rong*=tyLe;
+            dai *= tyLe;
+            rong *= tyLe;
         }
 
         public void TinhTien(double dx, double dy)
