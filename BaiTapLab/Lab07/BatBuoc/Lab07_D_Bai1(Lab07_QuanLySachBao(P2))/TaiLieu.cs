@@ -11,7 +11,9 @@ namespace Lab07_D_Bai1_Lab07_QuanLySachBao_P2__
         protected string _maSo;
         protected int _namXb;
         protected string _nhanDe;
-        private string _tacGia;
+        protected string _hoiNghi;
+        protected string _nhaXb;
+        protected string _tacGia;
 
         public string MaSo
         {
@@ -29,12 +31,6 @@ namespace Lab07_D_Bai1_Lab07_QuanLySachBao_P2__
         {
             get { return _nhanDe; }
             set { _nhanDe = value; }
-        }
-
-        public string TacGia
-        {
-            get { return _tacGia; }
-            set { _tacGia = value; }
         }
 
         public abstract bool LaCongTrinhCua(string tenTacGia);

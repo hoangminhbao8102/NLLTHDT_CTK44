@@ -8,8 +8,8 @@ namespace Lab07_D_Bai1_Lab07_QuanLySachBao_P2__
 {
     public class Sach : TaiLieu
     {
-        private string _nhaXb;
-        private MangChuoi _tacGia;
+        private new string _nhaXb;
+        private new MangChuoi _tacGia;
 
         public string NhaXB
         {

@@ -8,8 +8,8 @@ namespace Lab07_D_Bai1_Lab07_QuanLySachBao_P2__
 {
     public class BaoKhoaHoc : TaiLieu
     {
-        private string _hoiNghi;
-        private MangChuoi _tacGia;
+        private new string _hoiNghi;
+        private new MangChuoi _tacGia;
 
         public string HoiNghi
         {

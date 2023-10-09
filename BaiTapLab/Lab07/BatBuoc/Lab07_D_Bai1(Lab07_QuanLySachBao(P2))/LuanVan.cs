@@ -8,7 +8,7 @@ namespace Lab07_D_Bai1_Lab07_QuanLySachBao_P2__
 {
     public class LuanVan : TaiLieu
     {
-        private string _tacGia;
+        private new string _tacGia;
 
         public string TacGia
         {
