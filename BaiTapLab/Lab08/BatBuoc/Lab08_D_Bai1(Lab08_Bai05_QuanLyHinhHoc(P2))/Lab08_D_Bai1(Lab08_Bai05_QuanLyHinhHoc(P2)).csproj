@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChucNang.cs" />
     <Compile Include="DanhSachHinhHoc.cs" />
     <Compile Include="DieuKienKiemTraDienTich.cs" />
     <Compile Include="DieuKienKiemTraHinhChuNhat.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="IHinhHoc.cs" />
     <Compile Include="ISoSanhHinhHoc.cs" />
     <Compile Include="LoaiHinh.cs" />
+    <Compile Include="Menu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SoSanhTheoChuVi.cs" />

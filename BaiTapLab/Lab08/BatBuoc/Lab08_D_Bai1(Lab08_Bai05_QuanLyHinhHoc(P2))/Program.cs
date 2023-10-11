@@ -10,6 +10,11 @@ namespace Lab08_D_Bai1_Lab08_Bai05_QuanLyHinhHoc_P2__
     {
         static void Main(string[] args)
         {
+            Menu TrinhDon = new Menu();
+
+            TrinhDon.Run();
+
+            Console.ReadKey();
         }
     }
 }
