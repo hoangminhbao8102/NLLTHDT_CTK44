@@ -10,15 +10,29 @@ namespace Lab01_D_Bai01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Nhap kich thuoc cua hinh:");
+            Console.OutputEncoding = Encoding.UTF8;
+
+            Console.Write("Nhập kích thước của hình:");
             int size = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("\nPattern A:");
+            // Pattern (a)
+            Console.WriteLine("\nPattern (a):");
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
                 {
-                    if ((i + j) % 2 == 0)
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
+            }
+
+            // Pattern (b)
+            Console.WriteLine("\nPattern (b):");
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    if (i == size / 2 || j == size / 2)
                         Console.Write("* ");
                     else
                         Console.Write("  ");
@@ -26,12 +40,13 @@ namespace Lab01_D_Bai01
                 Console.WriteLine();
             }
 
-            Console.WriteLine("\nPattern B:");
+            // Pattern (c)
+            Console.WriteLine("\nPattern (c):");
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
                 {
-                    if (i == 0 || i == size - 1 || j == 0 || j == size - 1)
+                    if (i == 0 || j == 0 || i == size - 1 || j == size - 1)
                         Console.Write("* ");
                     else
                         Console.Write("  ");
@@ -39,191 +54,125 @@ namespace Lab01_D_Bai01
                 Console.WriteLine();
             }
 
-            Console.WriteLine("\nPattern C:");
+            // Pattern (a)
+            Console.WriteLine("\nPattern (a):");
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
                 {
-                    if (i == 0 || i == j || j == size - 1)
-                        Console.Write("* ");
+                    if (i == 0 || j == 0 || i == size - 1 || j == size - 1)
+                        Console.Write("# ");
                     else
                         Console.Write("  ");
                 }
                 Console.WriteLine();
             }
 
-            Console.WriteLine("\nPattern D:");
-            for (int i = 1; i <= size; i++)
-            {
-                for (int j = 1; j <= i; j++)
-                {
-                    Console.Write("# ");
-                }
-                Console.WriteLine();
-            }
-
-            Console.WriteLine("\nPattern E:");
-            for (int i = size; i >= 1; i--)
-            {
-                for (int j = 1; j <= i; j++)
-                {
-                    Console.Write("# ");
-                }
-                Console.WriteLine();
-            }
-
-            Console.WriteLine("\nPattern F:");
+            // Pattern (b)
+            Console.WriteLine("\nPattern (b):");
             for (int i = 0; i < size; i++)
             {
-                for (int j = 0; j < i; j++)
+                for (int j = 0; j < size; j++)
                 {
-                    Console.Write("  ");
-                }
-                for (int k = i; k < size; k++)
-                {
-                    Console.Write("# ");
-                }
-                Console.WriteLine();
-            }
-
-            Console.WriteLine("\nPattern G:");
-            for (int i = 0; i < size; i++)
-            {
-                for (int j = 0; j < size - i - 1; j++)
-                {
-                    Console.Write("  ");
-                }
-                for (int k = 0; k <= i; k++)
-                {
-                    Console.Write("# ");
-                }
-                Console.WriteLine();
-            }
-
-            Console.WriteLine("\nPattern H:");
-            for (int i = 0; i < size; i++)
-            {
-                if (i == 0 || i == size - 1)
-                {
-                    for (int j = 0; j < size; j++)
-                    {
+                    if (i == j)
                         Console.Write("# ");
-                    }
-                }
-                else
-                {
-                    Console.Write("#");
-                    for (int j = 1; j < size - 1; j++)
-                    {
+                    else
                         Console.Write("  ");
-                    }
-                    Console.Write(" #");
                 }
                 Console.WriteLine();
             }
 
-            Console.WriteLine("\nPattern I:");
+            // Pattern (c)
+            Console.WriteLine("\nPattern (c):");
             for (int i = 0; i < size; i++)
             {
-                for (int j = 0; j < i; j++)
+                for (int j = 0; j < size; j++)
                 {
-                    Console.Write("  ");
-                }
-                Console.Write("# ");
-                Console.WriteLine();
-            }
-            for (int i = 0; i < size; i++)
-            {
-                Console.Write("# ");
-            }
-            Console.WriteLine();
-
-            Console.WriteLine("\nPattern K:");
-            for (int i = 0; i < size; i++)
-            {
-                if (i == 0 || i == size - 1)
-                {
-                    for (int j = 0; j < size; j++)
-                    {
+                    if (i + j == size - 1)
                         Console.Write("# ");
-                    }
-                }
-                else
-                {
-                    for (int j = 0; j <= i; j++)
-                    {
+                    else
                         Console.Write("  ");
-                    }
-                    Console.Write("#");
                 }
                 Console.WriteLine();
             }
 
-            Console.WriteLine("\nPattern L:");
+            // Pattern (d)
+            Console.WriteLine("\nPattern (d):");
             for (int i = 0; i < size; i++)
             {
-                if (i == size - 1)
+                for (int j = 0; j < size; j++)
                 {
-                    for (int j = 0; j < size; j++)
-                    {
+                    if (i == j || i + j == size - 1)
                         Console.Write("# ");
-                    }
-                }
-                else
-                {
-                    for (int j = 0; j < i; j++)
-                    {
+                    else
                         Console.Write("  ");
-                    }
-                    Console.Write("#");
-                    for (int j = i + 1; j < size - 1; j++)
-                    {
-                        Console.Write("  ");
-                    }
-                    Console.Write("#");
                 }
                 Console.WriteLine();
             }
 
-            Console.WriteLine("\nPattern M:");
+            // Pattern (e)
+            Console.WriteLine("\nPattern (e):");
             for (int i = 0; i < size; i++)
             {
-                if (i == 0 || i == size - 1)
+                for (int j = 0; j < size; j++)
                 {
-                    for (int j = 0; j < size; j++)
-                    {
-                        Console.Write("# ");
-                    }
+                    Console.Write("# ");
                 }
-                else if (i <= size / 2)
+                Console.WriteLine();
+            }
+
+            // Pattern (f)
+            Console.WriteLine("\nPattern (f):");
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
                 {
-                    Console.Write("# ");
-                    for (int j = 0; j < i - 1; j++)
-                    {
-                        Console.Write("  ");
-                    }
-                    Console.Write("# ");
-                    for (int j = 0; j < size - 3 - 2 * i; j++)
-                    {
-                        Console.Write("  ");
-                    }
-                    if (i != 1)
-                    {
+                    if (i % 2 == 0)
                         Console.Write("# ");
-                    }
+                    else
+                        Console.Write("  ");
                 }
-                else
+                Console.WriteLine();
+            }
+
+            // Pattern (g)
+            Console.WriteLine("\nPattern (g):");
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
                 {
-                    for (int j = 0; j < size - i - 1; j++)
-                    {
+                    if (j % 2 == 0)
+                        Console.Write("# ");
+                    else
                         Console.Write("  ");
-                    }
-                    Console.Write("# ");
-                    for (int j = 0; j < 2 * (i - size / 2) - 1; j++)
-                    {
+                }
+                Console.WriteLine();
+            }
+
+            // Pattern (h)
+            Console.WriteLine("\nPattern (h):");
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    if ((i == 0 || i == size - 1) || (j == 0 || j == size - 1))
+                        Console.Write("# ");
+                    else
                         Console.Write("  ");
-                    }
-                    Console.Write("# ");
+                }
+                Console.WriteLine();
+            }
+
+            // Pattern (i)
+            Console.WriteLine("\nPattern (i):");
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    if ((i == 0 || i == size - 1) || (j == 0 || j == size - 1) || i == j || i + j == size - 1)
+                        Console.Write("# ");
+                    else
+                        Console.Write("  ");
                 }
                 Console.WriteLine();
             }
