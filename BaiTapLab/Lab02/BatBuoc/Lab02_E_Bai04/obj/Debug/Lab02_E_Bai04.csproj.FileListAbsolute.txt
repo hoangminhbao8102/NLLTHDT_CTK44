@@ -1,0 +1,7 @@
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab02\BatBuoc\Lab02_E_Bai04\bin\Debug\Lab02_E_Bai04.exe.config
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab02\BatBuoc\Lab02_E_Bai04\bin\Debug\Lab02_E_Bai04.exe
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab02\BatBuoc\Lab02_E_Bai04\bin\Debug\Lab02_E_Bai04.pdb
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab02\BatBuoc\Lab02_E_Bai04\obj\Debug\Lab02_E_Bai04.csproj.AssemblyReference.cache
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab02\BatBuoc\Lab02_E_Bai04\obj\Debug\Lab02_E_Bai04.csproj.CoreCompileInputs.cache
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab02\BatBuoc\Lab02_E_Bai04\obj\Debug\Lab02_E_Bai04.exe
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapLab\Lab02\BatBuoc\Lab02_E_Bai04\obj\Debug\Lab02_E_Bai04.pdb
