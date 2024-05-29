@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapLab\\Lab03\\BatBuoc\\Lab03_D_Bai6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CEED5B-2261-42DC-83C6-D8AF281E28F0}|Lab03_D_Bai6.csproj|e:\\nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\nllthdt_ctk44\\baitaplab\\lab03\\batbuoc\\lab03_d_bai6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2CEED5B-2261-42DC-83C6-D8AF281E28F0}|Lab03_D_Bai6.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2CEED5B-2261-42DC-83C6-D8AF281E28F0}|Lab03_D_Bai6.csproj|e:\\nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\nllthdt_ctk44\\baitaplab\\lab03\\batbuoc\\lab03_d_bai6\\sophuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2CEED5B-2261-42DC-83C6-D8AF281E28F0}|Lab03_D_Bai6.csproj|solutionrelative:sophuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapLab\\Lab03\\BatBuoc\\Lab03_D_Bai6\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapLab\\Lab03\\BatBuoc\\Lab03_D_Bai6\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T15:20:06.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SoPhuc.cs",
+              "DocumentMoniker": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapLab\\Lab03\\BatBuoc\\Lab03_D_Bai6\\SoPhuc.cs",
+              "RelativeDocumentMoniker": "SoPhuc.cs",
+              "ToolTip": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapLab\\Lab03\\BatBuoc\\Lab03_D_Bai6\\SoPhuc.cs",
+              "RelativeToolTip": "SoPhuc.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAswEMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T15:20:37.536Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
