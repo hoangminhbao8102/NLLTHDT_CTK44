@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2D794009-B541-4FA5-9016-AF48EAEEFE40}</ProjectGuid>
+    <ProjectGuid>{F17BA052-B283-43C5-AE48-8C2C255018A4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lab03_E_Bai1_Lab03_D_Bai5_P2__</RootNamespace>
-    <AssemblyName>Lab03_E_Bai1%28Lab03_D_Bai5%28P2%29%29</AssemblyName>
+    <RootNamespace>Lab03_E_Bai2</RootNamespace>
+    <AssemblyName>Lab03_E_Bai2</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NgayThang.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sach.cs" />
-    <Compile Include="TacGia.cs" />
+    <Compile Include="XeTai.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
