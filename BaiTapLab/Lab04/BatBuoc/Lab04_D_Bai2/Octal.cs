@@ -119,5 +119,14 @@ namespace Lab04_D_Bai2
         {
             return Convert.ToString((int)this, 8);
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Octal hex)
+                return _number == hex._number;
+            return false;
+        }
+
+        public override int GetHashCode() => _number.GetHashCode();
     }
 }

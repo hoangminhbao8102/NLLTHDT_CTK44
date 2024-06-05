@@ -94,5 +94,20 @@ namespace Lab04_D_Bai1
         {
             return $"({Thuc} + {Ao}i)";
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is SoPhuc)
+            {
+                SoPhuc sp = (SoPhuc)obj;
+                return this == sp;
+            }
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return Ao.GetHashCode() ^ Thuc.GetHashCode();
+        }
     }
 }
