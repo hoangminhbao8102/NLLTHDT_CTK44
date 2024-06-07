@@ -7,7 +7,7 @@ Trường: Đại học Đà Lạt<br>
 (Chiều thứ Tư hàng tuần (trừ một buổi duy nhất ngày 21/04/2021))<br>
 <br>
 <strong>Thời gian học thực hành:</strong> 01/03/2021 - 12/05/2021<br>
-(Sáng thứ Hai (trừ 2 ngày 08/03 và 03/05/2020) và thứ Tư (trừ một buổi duy nhất ngày 21/04/2021) hàng tuần)<br>
+(Sáng thứ Hai (trừ 2 ngày 08/03/2021 và 03/05/2021) và thứ Tư (trừ một buổi duy nhất ngày 21/04/2021) hàng tuần)<br>
 <br>
 Hoc kì II - Năm 1 (2020 - 2021)<br>
 <strong>Giáo viên giảng dạy:</strong> Thầy Trần Thống<br>
