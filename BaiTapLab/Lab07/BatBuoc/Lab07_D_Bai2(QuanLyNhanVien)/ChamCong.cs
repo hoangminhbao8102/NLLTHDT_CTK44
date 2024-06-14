@@ -8,8 +8,14 @@ namespace Lab07_D_Bai2_QuanLyNhanVien_
 {
     class ChamCong
     {
+        private int _maNV;
         private int _soNgayGio;
         private int _thang;
+
+        public int MaNV
+        {
+            get { return _maNV; }
+        }
 
         public int SoCong
         {
@@ -21,15 +27,16 @@ namespace Lab07_D_Bai2_QuanLyNhanVien_
             get { return _thang; }
         }
 
-        public ChamCong(int thang, int soCong)
+        public ChamCong(int maNV, int thang, int soCong)
         {
+            _maNV = maNV;
             _thang = thang;
             _soNgayGio = soCong;
         }
 
         public override string ToString()
         {
-            return $"Tháng: {_thang}, Số ngày giờ công: {_soNgayGio}";
+            return $"Mã NV: {_maNV}, Tháng: {_thang}, Số ngày giờ công: {_soNgayGio}";
         }
     }
 }

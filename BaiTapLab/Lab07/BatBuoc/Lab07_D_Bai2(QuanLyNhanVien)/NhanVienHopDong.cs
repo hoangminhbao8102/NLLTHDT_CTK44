@@ -28,9 +28,9 @@ namespace Lab07_D_Bai2_QuanLyNhanVien_
             _phuCap = 0; // Khởi tạo phụ cấp bằng 0
         }
 
-        public NhanVienHopDong(int manv, string ten, string phai, DateTime ngayBd, int phuCap) : base(manv, ten, phai, ngayBd)
+        public NhanVienHopDong(int manv, string ten, string phai, DateTime ngayBd, double heSoLuong, int phuCap) : base(manv, ten, phai, ngayBd)
         {
-            _heSoLuong = 2.34;
+            _heSoLuong = heSoLuong;
             _phuCap = phuCap;
         }
 

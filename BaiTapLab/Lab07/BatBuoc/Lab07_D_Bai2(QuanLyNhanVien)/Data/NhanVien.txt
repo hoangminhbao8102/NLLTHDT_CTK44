@@ -1,1 +1,2 @@
-﻿
+﻿HD, 001, John Doe, Male, 2023-01-01, 2.5, 300
+TG, 002, Jane Smith, Female, 2023-02-01, 100

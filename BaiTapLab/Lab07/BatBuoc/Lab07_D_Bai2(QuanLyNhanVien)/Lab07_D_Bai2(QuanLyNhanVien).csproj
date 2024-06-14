@@ -43,9 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BoDocDuLieu.cs" />
+    <Compile Include="BoDocDuLieuTuBanPhim.cs" />
+    <Compile Include="BoDocDuLieuTuFile.cs" />
     <Compile Include="ChamCong.cs" />
     <Compile Include="DanhSachChamCong.cs" />
     <Compile Include="DanhSachNhanVien.cs" />
+    <Compile Include="DuLieuNguon.cs" />
     <Compile Include="NhanVien.cs" />
     <Compile Include="NhanVienHopDong.cs" />
     <Compile Include="NhanVienTheoGio.cs" />
