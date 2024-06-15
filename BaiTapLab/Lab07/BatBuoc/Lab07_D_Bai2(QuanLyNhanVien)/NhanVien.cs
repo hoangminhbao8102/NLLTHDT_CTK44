@@ -60,7 +60,7 @@ namespace Lab07_D_Bai2_QuanLyNhanVien_
         public abstract void XuatBangLuong();
         public virtual void ThemChamCong() 
         {
-            ChamCong cc = new ChamCong(DateTime.Now.Month, 1); // Giả sử mỗi lần thêm chấm công là chấm công cho một ngày
+            ChamCong cc = new ChamCong(_maSo, DateTime.Now.Month, 1); // Giả sử mỗi lần thêm chấm công là chấm công cho một ngày
             _bangChamCong.Them(cc);
         }
     }

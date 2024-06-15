@@ -103,44 +103,59 @@ namespace Lab07_D_Bai2_QuanLyNhanVien_
         }
 
         //g.Xuất bảng lương của nhân viên có mã(manv) cho trước.Trong đó có các cột: tháng, số ngày/giờ công, tiền lương tháng đó.
-        public void XuatBangLuong(int maNV)
+        public void XuatBangLuong(int maNV, DanhSachChamCong chamCongs)
         {
-            Console.WriteLine("Tháng | Số Ngày/Giờ Công | Tiền Lương");
-            foreach (var cc in chamCongs)
+            var nhanVien = TimTheoMa(maNV);
+            if (nhanVien == null)
             {
+                Console.WriteLine("Không tìm thấy nhân viên với mã số cung cấp.");
+                return;
+            }
+
+            Console.WriteLine("Tháng | Số Ngày/Giờ Công | Tiền Lương");
+            for (int i = 0; i < chamCongs.SoLuong; i++)
+            {
+                var cc = chamCongs[i];  // Sử dụng indexer để truy cập ChamCong
                 if (cc.MaNV == maNV)
                 {
-                    var nv = TimTheoMa(maNV);
-                    double tienLuong = nv.TinhLuong(cc.Thang);
-                    Console.WriteLine($"{cc.Thang} | {cc.SoNgayGio} | {tienLuong}");
+                    double tienLuong = nhanVien.TinhLuong(cc.Thang);
+                    Console.WriteLine($"{cc.Thang} | {cc.SoCong} | {tienLuong}");
                 }
             }
         }
 
         //h.Tính tổng tiền lương của nhân viên.
-        public double TinhTongLuong(int maNV)
+        public double TinhTongLuong(int maNV, DanhSachChamCong chamCongs)
         {
             double tongLuong = 0;
-            foreach (var cc in chamCongs)
+            for (int i = 0; i < chamCongs.SoLuong; i++)
             {
+                var cc = chamCongs[i];
                 if (cc.MaNV == maNV)
                 {
                     var nv = TimTheoMa(maNV);
-                    tongLuong += nv.TinhLuong(cc.Thang);
+                    if (nv != null)
+                    {
+                        tongLuong += nv.TinhLuong(cc.Thang);
+                    }
                 }
             }
             return tongLuong;
         }
 
         //i.Xuất thông tin chi tiết về nhân viên có mã (manv), kể cả bảng lương và tổng lương.
-        public void XuatThongTinChiTiet(int maNV)
+        public void XuatThongTinChiTiet(int maNV, DanhSachChamCong chamCongs)
         {
             var nv = TimTheoMa(maNV);
             if (nv != null)
             {
                 Console.WriteLine(nv.ToString());
-                XuatBangLuong(maNV);
-                Console.WriteLine($"Tổng lương: {TinhTongLuong(maNV)}");
+                XuatBangLuong(maNV, chamCongs); // Truyền chamCongs như một tham số
+                Console.WriteLine($"Tổng lương: {TinhTongLuong(maNV, chamCongs)}");
+            }
+            else
+            {
+                Console.WriteLine("Không tìm thấy nhân viên.");
             }
         }
 
@@ -157,11 +172,12 @@ namespace Lab07_D_Bai2_QuanLyNhanVien_
         }
 
         //k.Tìm các nhân viên theo tháng không làm việc trong tháng 7.
-        public void TimNhanVienKhongLamViecThang7()
+        public void TimNhanVienKhongLamViecThang7(DanhSachChamCong chamCongs)
         {
             HashSet<int> maNVsLamViecThang7 = new HashSet<int>();
-            foreach (var cc in chamCongs)
+            for (int i = 0; i < chamCongs.SoLuong; i++)
             {
+                var cc = chamCongs[i];
                 if (cc.Thang == 7)
                 {
                     maNVsLamViecThang7.Add(cc.MaNV);
@@ -199,20 +215,25 @@ namespace Lab07_D_Bai2_QuanLyNhanVien_
         }
 
         //m.Tìm nhân viên (theo giờ) có mức thưởng cao nhất trong tháng 12.
-        public void TimNhanVienTheoGioThuongCaoNhatThang12()
+        public void TimNhanVienTheoGioThuongCaoNhatThang12(DanhSachChamCong chamCongs)
         {
             NhanVienTheoGio nvMax = null;
             double thuongMax = double.MinValue;
 
-            foreach (var cc in chamCongs)
+            for (int i = 0; i < chamCongs.SoLuong; i++)
             {
-                if (cc.Thang == 12 && danhSach[cc.MaNV] is NhanVienTheoGio nvg)
+                ChamCong cc = chamCongs[i];
+                if (cc.Thang == 12)
                 {
-                    double thuong = nvg.TinhLuong(cc.SoNgayGio);
-                    if (thuong > thuongMax)
+                    var nv = TimTheoMa(cc.MaNV);
+                    if (nv is NhanVienTheoGio nvg)
                     {
-                        nvMax = nvg;
-                        thuongMax = thuong;
+                        double thuong = nvg.TinhLuong(cc.Thang);
+                        if (thuong > thuongMax)
+                        {
+                            nvMax = nvg;
+                            thuongMax = thuong;
+                        }
                     }
                 }
             }
@@ -284,21 +305,33 @@ namespace Lab07_D_Bai2_QuanLyNhanVien_
         }
 
         //r.Tìm tháng có số tiền lương phải trả cao nhất.
-        public void TimThangLuongCaoNhat()
+        public void TimThangLuongCaoNhat(DanhSachChamCong chamCongs)
         {
-            Dictionary<int, double> luongTheoThang = new Dictionary<int, double>();
+            double[] luongTheoThang = new double[13]; // Mảng lưu trữ tổng lương từ tháng 1 đến 12
 
-            foreach (var cc in chamCongs)
+            for (int i = 0; i < chamCongs.SoLuong; i++)
             {
-                if (!luongTheoThang.ContainsKey(cc.Thang))
-                    luongTheoThang[cc.Thang] = 0;
-
+                var cc = chamCongs[i];
                 var nv = TimTheoMa(cc.MaNV);
-                luongTheoThang[cc.Thang] += nv.TinhLuong(cc.Thang);
+                if (nv != null)
+                {
+                    luongTheoThang[cc.Thang] += nv.TinhLuong(cc.Thang);
+                }
             }
 
-            var thangLuongCaoNhat = luongTheoThang.OrderByDescending(x => x.Value).FirstOrDefault();
-            Console.WriteLine($"Tháng {thangLuongCaoNhat.Key} có tổng lương cao nhất: {thangLuongCaoNhat.Value}");
+            int thangLuongCaoNhat = 0;
+            double maxLuong = 0;
+
+            for (int thang = 1; thang <= 12; thang++)
+            {
+                if (luongTheoThang[thang] > maxLuong)
+                {
+                    maxLuong = luongTheoThang[thang];
+                    thangLuongCaoNhat = thang;
+                }
+            }
+
+            Console.WriteLine($"Tháng {thangLuongCaoNhat} có tổng lương cao nhất: {maxLuong}");
         }
 
         //s.Tìm nhân viên có phụ cấp cao nhất.
@@ -323,28 +356,38 @@ namespace Lab07_D_Bai2_QuanLyNhanVien_
         }
 
         //t.Tính tổng tiền lương phải trả cho các nhân viên hợp đồng trong tháng cho trước.
-        public double TinhTongLuongHopDongThang(int thang)
+        public double TinhTongLuongHopDongThang(int thang, DanhSachChamCong chamCongs)
         {
             double tongLuong = 0;
-            foreach (var cc in chamCongs)
+            for (int i = 0; i < chamCongs.SoLuong; i++)
             {
-                if (cc.Thang == thang && danhSach[cc.MaNV] is NhanVienHopDong)
+                var cc = chamCongs[i];
+                if (cc.Thang == thang)
                 {
-                    tongLuong += danhSach[cc.MaNV].TinhLuong(thang);
+                    var nv = TimTheoMa(cc.MaNV);
+                    if (nv is NhanVienHopDong nvh)
+                    {
+                        tongLuong += nvh.TinhLuong(thang);
+                    }
                 }
             }
             return tongLuong;
         }
 
         //u.Tính tổng tiền lương phải trả cho các nhân viên làm việc theo giờ trong tháng cho trước.
-        public double TinhTongLuongTheoGioThang(int thang)
+        public double TinhTongLuongTheoGioThang(int thang, DanhSachChamCong chamCongs)
         {
             double tongLuong = 0;
-            foreach (var cc in chamCongs)
+            for (int i = 0; i < chamCongs.SoLuong; i++)
             {
-                if (cc.Thang == thang && danhSach[cc.MaNV] is NhanVienTheoGio)
+                var cc = chamCongs[i];
+                if (cc.Thang == thang)
                 {
-                    tongLuong += danhSach[cc.MaNV].TinhLuong(thang);
+                    var nv = TimTheoMa(cc.MaNV);
+                    if (nv is NhanVienTheoGio nvg)
+                    {
+                        tongLuong += nvg.TinhLuong(thang);
+                    }
                 }
             }
             return tongLuong;
@@ -365,28 +408,30 @@ namespace Lab07_D_Bai2_QuanLyNhanVien_
         }
 
         //w.Tính tổng số giờ công của tất cả các nhân viên làm việc theo giờ trong tháng 12
-        public int TinhTongGioCongThang12()
+        public int TinhTongGioCongThang12(DanhSachChamCong chamCongs)
         {
             int tongSoGio = 0;
-            foreach (var cc in chamCongs)
+            for (int i = 0; i < chamCongs.SoLuong; i++)
             {
-                if (cc.Thang == 12 && danhSach[cc.MaNV] is NhanVienTheoGio)
+                var cc = chamCongs[i];
+                if (cc.Thang == 12 && TimTheoMa(cc.MaNV) is NhanVienTheoGio)
                 {
-                    tongSoGio += cc.SoNgayGio;
+                    tongSoGio += cc.SoCong;
                 }
             }
             return tongSoGio;
         }
 
         //x.Tính tổng số ngày công của các nhân viên hợp đồng trong một năm.
-        public int TinhTongNgayCongHopDongNam()
+        public int TinhTongNgayCongHopDongNam(DanhSachChamCong chamCongs)
         {
             int tongSoNgay = 0;
-            foreach (var cc in chamCongs)
+            for (int i = 0; i < chamCongs.SoLuong; i++)
             {
-                if (danhSach[cc.MaNV] is NhanVienHopDong)
+                var cc = chamCongs[i];
+                if (TimTheoMa(cc.MaNV) is NhanVienHopDong)
                 {
-                    tongSoNgay += cc.SoNgayGio;
+                    tongSoNgay += cc.SoCong;
                 }
             }
             return tongSoNgay;
