@@ -443,6 +443,5 @@ namespace Lab07_D_Bai2_QuanLyNhanVien_
             danhSach = danhSach.Where(nv => !(nv is NhanVienTheoGio)).ToArray();
             soLuong = danhSach.Length;
         }
-
     }
 }

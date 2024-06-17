@@ -10,6 +10,13 @@ namespace Lab07_D_Bai2_QuanLyNhanVien_
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+
+            Menu menu = new Menu();
+
+            menu.Run();
+
+            Console.ReadKey();
         }
     }
 }

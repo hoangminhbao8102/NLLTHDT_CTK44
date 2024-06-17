@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6D1724BD-471F-4A70-AB90-6ED97DF56114}</ProjectGuid>
+    <ProjectGuid>{72112D7F-9BA8-4D52-9620-A145E3E00019}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lab07_D_Bai2_QuanLyNhanVien_</RootNamespace>
-    <AssemblyName>Lab07_D_Bai2%28QuanLyNhanVien%29</AssemblyName>
+    <RootNamespace>Lab07_BaiTapThem_QuanLyTaiKhoanNganHang_</RootNamespace>
+    <AssemblyName>Lab07_BaiTapThem%28QuanLyTaiKhoanNganHang%29</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,28 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BoDocDuLieu.cs" />
-    <Compile Include="BoDocDuLieuTuBanPhim.cs" />
-    <Compile Include="BoDocDuLieuTuFile.cs" />
-    <Compile Include="ChamCong.cs" />
-    <Compile Include="ChucNang.cs" />
-    <Compile Include="DanhSachChamCong.cs" />
-    <Compile Include="DanhSachNhanVien.cs" />
-    <Compile Include="DuLieuNguon.cs" />
-    <Compile Include="Menu.cs" />
-    <Compile Include="NhanVien.cs" />
-    <Compile Include="NhanVienHopDong.cs" />
-    <Compile Include="NhanVienTheoGio.cs" />
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountType.cs" />
+    <Compile Include="Bank.cs" />
+    <Compile Include="CheckingAccount.cs" />
+    <Compile Include="LoanAccount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SavingsAccount.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="TransactionType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Data\CauHinh.txt" />
-    <Content Include="Data\ChamCong.txt" />
-    <Content Include="Data\NhanVien.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
