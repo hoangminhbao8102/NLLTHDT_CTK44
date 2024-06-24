@@ -31,7 +31,7 @@ namespace Lab09_D_Bai2
             }
         }
 
-        protected void PhatSinhSuKien(string chuoiSo)
+        protected virtual void PhatSinhSuKien(string chuoiSo)
         {
             // Kích hoạt event với chuỗi số tìm được
             TimThaySo?.Invoke(chuoiSo);
