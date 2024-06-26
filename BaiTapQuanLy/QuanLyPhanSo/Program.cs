@@ -117,10 +117,10 @@ namespace QuanLyPhanSo
                         Console.WriteLine("Phan so lon nhat la: {0}/{1}", maxPhanSo.tu, maxPhanSo.mau);
                         break;
                     case Menu.TimTheoMau:
-                        Console.WriteLine("Nhập giá trị của mẫu: ");
+                        Console.WriteLine("Nhap gia tri cua mau: ");
                         int mau = int.Parse(Console.ReadLine());
                         MangPhanSo ketQuaTheoMau = ds.TimPhanSoCoMauLa(mau);
-                        Console.WriteLine("Các phân số có mẫu {0} là:", mau);
+                        Console.WriteLine("Cac phan so co mau {0} là:", mau);
                         ketQuaTheoMau.Xuat();
                         break;
                     case Menu.DemSoPhanSoAm:

@@ -21,9 +21,9 @@ namespace QuanLyPhanSo
         }
         public void Nhap()
         {
-            Console.Write("Nhap tu ");
+            Console.Write("Nhap tu: ");
             tu = int.Parse(Console.ReadLine());
-            Console.Write("Nhap mau ");
+            Console.Write("Nhap mau: ");
             mau = int.Parse(Console.ReadLine());
         }
         public void Xuat()
@@ -65,7 +65,7 @@ namespace QuanLyPhanSo
         {
             if (a.tu == 0)
             {
-                throw new ArgumentException("Không thể nghịch đảo phân số với tử số bằng 0.");
+                throw new ArgumentException("Khong the nghich dao phan so voi tu so bang 0.");
             }
 
             PhanSo kq = new PhanSo();
