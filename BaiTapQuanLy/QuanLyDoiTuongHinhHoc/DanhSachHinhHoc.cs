@@ -16,6 +16,15 @@ namespace QuanLyDoiTuongHinhHoc
         {
             collection.Add(hh);
         }
+
+        public HinhHoc LayPhanTuCuoi()
+        {
+            if (collection.Count > 0)
+            {
+                return collection[collection.Count - 1];
+            }
+            return null;
+        }
         public override string ToString()
         {
             string s = "";

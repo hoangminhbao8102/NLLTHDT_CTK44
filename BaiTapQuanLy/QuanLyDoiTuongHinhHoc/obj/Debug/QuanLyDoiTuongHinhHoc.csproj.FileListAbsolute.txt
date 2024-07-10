@@ -1,7 +1,0 @@
-E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapQuanLy\QuanLyDoiTuongHinhHoc\bin\Debug\QuanLyDoiTuongHinhHoc.exe.config
-E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapQuanLy\QuanLyDoiTuongHinhHoc\bin\Debug\QuanLyDoiTuongHinhHoc.exe
-E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapQuanLy\QuanLyDoiTuongHinhHoc\bin\Debug\QuanLyDoiTuongHinhHoc.pdb
-E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapQuanLy\QuanLyDoiTuongHinhHoc\obj\Debug\QuanLyDoiTuongHinhHoc.csproj.AssemblyReference.cache
-E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapQuanLy\QuanLyDoiTuongHinhHoc\obj\Debug\QuanLyDoiTuongHinhHoc.csproj.CoreCompileInputs.cache
-E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapQuanLy\QuanLyDoiTuongHinhHoc\obj\Debug\QuanLyDoiTuongHinhHoc.exe
-E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapQuanLy\QuanLyDoiTuongHinhHoc\obj\Debug\QuanLyDoiTuongHinhHoc.pdb
