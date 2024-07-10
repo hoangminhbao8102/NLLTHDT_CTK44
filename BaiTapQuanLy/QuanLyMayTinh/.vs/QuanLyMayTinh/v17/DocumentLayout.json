@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\QuanLyMayTinh\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5AB33DFC-4810-4CCB-923A-4166BD1E0ED5}|QuanLyMayTinh.csproj|e:\\nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\nllthdt_ctk44\\baitapquanly\\quanlymaytinh\\danhsachmaytinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AB33DFC-4810-4CCB-923A-4166BD1E0ED5}|QuanLyMayTinh.csproj|solutionrelative:danhsachmaytinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AB33DFC-4810-4CCB-923A-4166BD1E0ED5}|QuanLyMayTinh.csproj|e:\\nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\nllthdt_ctk44\\baitapquanly\\quanlymaytinh\\maytinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AB33DFC-4810-4CCB-923A-4166BD1E0ED5}|QuanLyMayTinh.csproj|solutionrelative:maytinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AB33DFC-4810-4CCB-923A-4166BD1E0ED5}|QuanLyMayTinh.csproj|e:\\nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\nllthdt_ctk44\\baitapquanly\\quanlymaytinh\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AB33DFC-4810-4CCB-923A-4166BD1E0ED5}|QuanLyMayTinh.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DanhSachMayTinh.cs",
+              "DocumentMoniker": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\QuanLyMayTinh\\DanhSachMayTinh.cs",
+              "RelativeDocumentMoniker": "DanhSachMayTinh.cs",
+              "ToolTip": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\QuanLyMayTinh\\DanhSachMayTinh.cs",
+              "RelativeToolTip": "DanhSachMayTinh.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAIwEsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T08:14:35.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MayTinh.cs",
+              "DocumentMoniker": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\QuanLyMayTinh\\MayTinh.cs",
+              "RelativeDocumentMoniker": "MayTinh.cs",
+              "ToolTip": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\QuanLyMayTinh\\MayTinh.cs",
+              "RelativeToolTip": "MayTinh.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCkAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T08:14:09.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\QuanLyMayTinh\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\QuanLyMayTinh\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T08:04:54.731Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
