@@ -53,7 +53,7 @@ namespace QuanLyMayTinh
 
         public override string ToString() 
         {
-            return "CPU hang " + HangSX + " gia = " + Gia;
+            return "CPU hãng " + HangSX + " giá = " + Gia;
         }
     }
 }

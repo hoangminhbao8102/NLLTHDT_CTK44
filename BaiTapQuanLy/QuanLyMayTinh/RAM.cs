@@ -14,7 +14,7 @@ namespace QuanLyMayTinh
 
         public override string ToString()
         {
-            return "Ram hang " + HangSX + " gia = " + Gia;
+            return "RAM hãng " + HangSX + " giá = " + Gia;
         }
     }
 }

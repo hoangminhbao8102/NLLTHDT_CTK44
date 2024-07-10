@@ -9,6 +9,10 @@ namespace QuanLyMayTinh
     class MayTinh
     {
         List<IThietBi> collection = new List<IThietBi>();
+        public List<IThietBi> GetCollection()
+        {
+            return collection;
+        }
         public void Them(IThietBi tb)
         {
             collection.Add(tb);
@@ -29,7 +33,7 @@ namespace QuanLyMayTinh
             {
                 s += item + "\n";
             }
-            s += "; tong gia la " + TongGia();
+            s += "; tổng giá là " + TongGia();
             return s;
         }
         public int DemTheoHang(string hang)

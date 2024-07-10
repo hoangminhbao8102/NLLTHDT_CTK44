@@ -1,0 +1,7 @@
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapQuanLy\QuanLyMayTinh\bin\Debug\QuanLyMayTinh.exe.config
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapQuanLy\QuanLyMayTinh\bin\Debug\QuanLyMayTinh.exe
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapQuanLy\QuanLyMayTinh\bin\Debug\QuanLyMayTinh.pdb
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapQuanLy\QuanLyMayTinh\obj\Debug\QuanLyMayTinh.csproj.AssemblyReference.cache
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapQuanLy\QuanLyMayTinh\obj\Debug\QuanLyMayTinh.csproj.CoreCompileInputs.cache
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapQuanLy\QuanLyMayTinh\obj\Debug\QuanLyMayTinh.exe
+E:\Nguyên lý lập trình hướng đối tượng\NLLTHDT_CTK44\BaiTapQuanLy\QuanLyMayTinh\obj\Debug\QuanLyMayTinh.pdb
