@@ -45,9 +45,13 @@
   <ItemGroup>
     <Compile Include="ChucNang.cs" />
     <Compile Include="ChucNangNhap.cs" />
+    <Compile Include="ChucNangTimKiem.cs" />
+    <Compile Include="ChucNangXuat.cs" />
     <Compile Include="MangSoNguyen.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="MenuNhap.cs" />
+    <Compile Include="MenuTimKiem.cs" />
+    <Compile Include="MenuXuat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -17,7 +17,7 @@ namespace Mang1ChieuSoNguyen
 
         private void Show()
         {
-            Console.WriteLine("====================== MENU ======================");
+            Console.WriteLine("====================== MENU NHẬP =================");
             Console.WriteLine("{0}. Nhập", (int)ChucNangNhap.Nhap);
             Console.WriteLine("{0}. Nhập ngẫu nhiên", (int)ChucNangNhap.NhapNgauNhien);
             Console.WriteLine("{0}. Thoát", (int)ChucNangNhap.Thoat);
@@ -33,7 +33,7 @@ namespace Mang1ChieuSoNguyen
             do
             {
                 this.Show();
-                Console.Write("Nhập số để chọn menu (0..{0}) : ", SoMenu);
+                Console.Write("Nhập số để chọn menu nhập (0..{0}) : ", SoMenu);
             } while (menu < 0 || menu >= SoMenu);
 
             return (ChucNangNhap)menu;
@@ -44,8 +44,8 @@ namespace Mang1ChieuSoNguyen
             switch (menu)
             {
                 case ChucNangNhap.Thoat:
-                    Console.WriteLine("Kết thúc chương trình nhập");
-                    break;
+                    Console.WriteLine("Kết thúc chương trình nhập!");
+                    return;
                 case ChucNangNhap.Nhap:
                     MangNguyen.Nhap();
                     break;

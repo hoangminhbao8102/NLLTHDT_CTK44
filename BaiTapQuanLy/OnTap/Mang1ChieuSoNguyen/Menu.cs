@@ -53,15 +53,19 @@ namespace Mang1ChieuSoNguyen
             switch (menu)
             {
                 case ChucNang.Thoat:
-                    Console.WriteLine("Kết thúc chương trình");
+                    Console.WriteLine("Kết thúc chương trình!");
                     break;
                 case ChucNang.NhapLieu:
                     MenuNhap menuNhap = new MenuNhap();
                     menuNhap.Run();
                     break;
                 case ChucNang.XuatDuLieu:
+                    MenuXuat menuXuat = new MenuXuat();
+                    menuXuat.Run();
                     break;
                 case ChucNang.TimKiem:
+                    MenuTimKiem menuTimKiem = new MenuTimKiem();
+                    menuTimKiem.Run();
                     break;
                 case ChucNang.ThemPhanTu:
                     break;
