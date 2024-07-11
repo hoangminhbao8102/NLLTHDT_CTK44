@@ -17,6 +17,7 @@ namespace Mang1ChieuSoNguyen
 
         private void Show()
         {
+            Console.Clear();
             Console.WriteLine("====================== MENU XUẤT =================");
             Console.WriteLine("{0}. Xuất", (int)ChucNangXuat.Xuat);
             Console.WriteLine("{0}. Xuất mảng", (int)ChucNangXuat.XuatMang);
@@ -26,15 +27,23 @@ namespace Mang1ChieuSoNguyen
 
         private ChucNangXuat Select()
         {
-            int SoMenu = Enum.GetNames(typeof(ChucNang)).Length;
+            int SoMenu = Enum.GetNames(typeof(ChucNangXuat)).Length;
 
-            int menu = 0;
-
+            int menu;
+            bool isValid;
             do
             {
                 this.Show();
-                Console.Write("Nhập số để chọn menu xuất (0..{0}) : ", SoMenu);
-            } while (menu < 0 || menu >= SoMenu);
+                Console.Write("Nhập số để chọn menu xuất (0..{0}) : ", SoMenu - 1);
+                isValid = int.TryParse(Console.ReadLine(), out menu);
+
+                if (!isValid || menu < 0 || menu >= SoMenu)
+                {
+                    Console.WriteLine("Giá trị nhập không hợp lệ, vui lòng nhập lại!");
+                    isValid = false;
+                }
+
+            } while (!isValid);
 
             return (ChucNangXuat)menu;
         }
@@ -45,7 +54,8 @@ namespace Mang1ChieuSoNguyen
             {
                 case ChucNangXuat.Thoat:
                     Console.WriteLine("Kết thúc chương trình xuất!");
-                    return;
+                    Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
+                    break;
                 case ChucNangXuat.Xuat:
                     MangNguyen.Xuat();
                     break;
@@ -72,7 +82,10 @@ namespace Mang1ChieuSoNguyen
             do
             {
                 menu = this.Select();
-                this.Process(menu);
+                if (menu != 0)
+                {
+                    this.Process(menu);
+                }
             } while (menu != ChucNangXuat.Thoat);
         }
     }

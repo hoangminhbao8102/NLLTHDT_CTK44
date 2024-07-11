@@ -17,6 +17,7 @@ namespace Mang1ChieuSoNguyen
 
         private void Show()
         {
+            Console.Clear();
             Console.WriteLine("====================== MENU ======================");
             Console.WriteLine("{0}. Nhập liệu", (int)ChucNang.NhapLieu);
             Console.WriteLine("{0}. Xuất dữ liệu", (int)ChucNang.XuatDuLieu);
@@ -37,13 +38,21 @@ namespace Mang1ChieuSoNguyen
         {
             int SoMenu = Enum.GetNames(typeof(ChucNang)).Length;
 
-            int menu = 0;
-
+            int menu;
+            bool isValid;
             do
             {
                 this.Show();
-                Console.Write("Nhập số để chọn menu (0..{0}) : ", SoMenu);
-            } while (menu < 0 || menu >= SoMenu);
+                Console.Write("Nhập số để chọn menu (0..{0}) : ", SoMenu - 1);
+                isValid = int.TryParse(Console.ReadLine(), out menu);
+
+                if (!isValid || menu < 0 || menu >= SoMenu)
+                {
+                    Console.WriteLine("Giá trị nhập không hợp lệ, vui lòng nhập lại!");
+                    isValid = false;
+                }
+
+            } while (!isValid);
 
             return (ChucNang)menu;
         }
@@ -68,20 +77,55 @@ namespace Mang1ChieuSoNguyen
                     menuTimKiem.Run();
                     break;
                 case ChucNang.ThemPhanTu:
+                    MenuThem menuThem = new MenuThem();
+                    menuThem.Run();
                     break;
                 case ChucNang.XoaPhanTu:
+                    MenuXoa menuXoa = new MenuXoa();
+                    menuXoa.Run();
                     break;
                 case ChucNang.ThayThePhanTu:
+                    Console.Write("Nhập giá trị cần thay thế: ");
+                    int cu = int.Parse(Console.ReadLine());
+                    Console.Write("Nhập giá trị mới: ");
+                    int moi = int.Parse(Console.ReadLine());
+                    if (MangNguyen.ThayThePhanTu(cu, moi))
+                    {
+                        Console.WriteLine("Đã thay thế phần tử {0} bằng {1}.", cu, moi);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Thay thế phần tử thất bại.");
+                    }
                     break;
                 case ChucNang.DemSoLuong:
+                    MenuDem menuDem = new MenuDem();
+                    menuDem.Run();
                     break;
                 case ChucNang.TinhToan:
+                    int tong = MangNguyen.TinhTongCacSoNguyen();
+                    Console.WriteLine("Tổng các số nguyên trong mảng là: {0}", tong);
                     break;
                 case ChucNang.SapXep:
+                    MenuSapXep menuSapXep = new MenuSapXep();
+                    menuSapXep.Run();
                     break;
                 case ChucNang.DaoNguoc:
+                    MangNguyen.DaoNguocMang();
+                    Console.WriteLine("Đã đảo ngược mảng.");
+                    MangNguyen.Xuat(); // Giả sử MangNguyen có phương thức Xuat() để in mảng ra màn hình
                     break;
                 case ChucNang.KiemTra:
+                    Console.Write("Nhập giá trị cần kiểm tra: ");
+                    int x = int.Parse(Console.ReadLine());
+                    if (MangNguyen.KiemTra(x))
+                    {
+                        Console.WriteLine("{0} là số nguyên tố.", x);
+                    }
+                    else
+                    {
+                        Console.WriteLine("{0} không phải là số nguyên tố.", x);
+                    }
                     break;
                 default:
                     Console.WriteLine("Chức năng không được hỗ trợ");
@@ -95,7 +139,10 @@ namespace Mang1ChieuSoNguyen
             do
             {
                 menu = this.Select();
-                this.Process(menu);
+                if (menu != ChucNang.Thoat)
+                {
+                    this.Process(menu);
+                }
             } while (menu != ChucNang.Thoat);
         }
     }

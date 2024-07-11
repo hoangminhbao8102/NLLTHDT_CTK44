@@ -44,14 +44,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChucNang.cs" />
-    <Compile Include="ChucNangNhap.cs" />
-    <Compile Include="ChucNangTimKiem.cs" />
-    <Compile Include="ChucNangXuat.cs" />
+    <Compile Include="ChucNang\ChucNangDem.cs" />
+    <Compile Include="ChucNang\ChucNangNhap.cs" />
+    <Compile Include="ChucNang\ChucNangSapXep.cs" />
+    <Compile Include="ChucNang\ChucNangThem.cs" />
+    <Compile Include="ChucNang\ChucNangTimKiem.cs" />
+    <Compile Include="ChucNang\ChucNangXoa.cs" />
+    <Compile Include="ChucNang\ChucNangXuat.cs" />
     <Compile Include="MangSoNguyen.cs" />
     <Compile Include="Menu.cs" />
-    <Compile Include="MenuNhap.cs" />
-    <Compile Include="MenuTimKiem.cs" />
-    <Compile Include="MenuXuat.cs" />
+    <Compile Include="Menu\MenuDem.cs" />
+    <Compile Include="Menu\MenuNhap.cs" />
+    <Compile Include="Menu\MenuSapXep.cs" />
+    <Compile Include="Menu\MenuThem.cs" />
+    <Compile Include="Menu\MenuTimKiem.cs" />
+    <Compile Include="Menu\MenuXoa.cs" />
+    <Compile Include="Menu\MenuXuat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

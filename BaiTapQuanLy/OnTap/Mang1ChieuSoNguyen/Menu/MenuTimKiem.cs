@@ -17,6 +17,7 @@ namespace Mang1ChieuSoNguyen
 
         private void Show()
         {
+            Console.Clear();
             Console.WriteLine("====================== MENU TÌM KIẾM =============");
             Console.WriteLine("{0}. Tìm vị trí đầu tiên của mảng", (int)ChucNangTimKiem.TimViTriDauTien);
             Console.WriteLine("{0}. Tìm vị trí cuối cùng của mảng", (int)ChucNangTimKiem.TimViTriCuoiCung);
@@ -40,13 +41,21 @@ namespace Mang1ChieuSoNguyen
         {
             int SoMenu = Enum.GetNames(typeof(ChucNangTimKiem)).Length;
 
-            int menu = 0;
-
+            int menu;
+            bool isValid;
             do
             {
                 this.Show();
-                Console.Write("Nhập số để chọn menu tìm kiếm (0..{0}) : ", SoMenu);
-            } while (menu < 0 || menu >= SoMenu);
+                Console.Write("Nhập số để chọn menu tìm kiếm (0..{0}) : ", SoMenu - 1);
+                isValid = int.TryParse(Console.ReadLine(), out menu);
+
+                if (!isValid || menu < 0 || menu >= SoMenu)
+                {
+                    Console.WriteLine("Giá trị nhập không hợp lệ, vui lòng nhập lại!");
+                    isValid = false;
+                }
+
+            } while (!isValid);
 
             return (ChucNangTimKiem)menu;
         }
@@ -61,6 +70,7 @@ namespace Mang1ChieuSoNguyen
             {
                 case ChucNangTimKiem.Thoat:
                     Console.WriteLine("Kết thúc chương trình tìm kiếm!");
+                    Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
                     break;
                 case ChucNangTimKiem.TimViTriDauTien:
                     Console.Write("Nhập giá trị cần tìm: ");
@@ -152,7 +162,10 @@ namespace Mang1ChieuSoNguyen
             do
             {
                 menu = this.Select();
-                this.Process(menu);
+                if (menu != 0)
+                {
+                    this.Process(menu);
+                }
             } while (menu != ChucNangTimKiem.Thoat);
         }
     }

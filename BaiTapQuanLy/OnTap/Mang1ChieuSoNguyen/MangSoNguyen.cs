@@ -25,7 +25,7 @@ namespace Mang1ChieuSoNguyen
 
         public void Nhap()
         {
-            Console.Write("Nhập vào số phần tử của mảng");
+            Console.Write("Nhập vào số phần tử của mảng: ");
             length = int.Parse(Console.ReadLine());
             for (int i = 0; i < length; i++)
             {
@@ -71,7 +71,7 @@ namespace Mang1ChieuSoNguyen
 
         public void NhapNgauNhien()
         {
-            Console.Write("Nhap vao so phan tu cua mang ");
+            Console.Write("Nhập vào số phần tử của mảng: ");
             length = int.Parse(Console.ReadLine());
             Random r = new Random();
             for (int i = 0; i < length; i++)
@@ -92,7 +92,7 @@ namespace Mang1ChieuSoNguyen
 
         public void Xuat()
         {
-            Console.WriteLine("Mang vua nhap la ");
+            Console.WriteLine("Mảng vừa nhập là: ");
             for (int i = 0; i < length; i++)
             {
                 Console.Write("\t " + a[i]);

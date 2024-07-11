@@ -17,6 +17,7 @@ namespace Mang1ChieuSoNguyen
 
         private void Show()
         {
+            Console.Clear();
             Console.WriteLine("====================== MENU NHẬP =================");
             Console.WriteLine("{0}. Nhập", (int)ChucNangNhap.Nhap);
             Console.WriteLine("{0}. Nhập ngẫu nhiên", (int)ChucNangNhap.NhapNgauNhien);
@@ -26,15 +27,23 @@ namespace Mang1ChieuSoNguyen
 
         private ChucNangNhap Select()
         {
-            int SoMenu = Enum.GetNames(typeof(ChucNang)).Length;
+            int SoMenu = Enum.GetNames(typeof(ChucNangNhap)).Length;
 
-            int menu = 0;
-
+            int menu;
+            bool isValid;
             do
             {
                 this.Show();
-                Console.Write("Nhập số để chọn menu nhập (0..{0}) : ", SoMenu);
-            } while (menu < 0 || menu >= SoMenu);
+                Console.Write("Nhập số để chọn menu nhập (0..{0}) : ", SoMenu - 1);
+                isValid = int.TryParse(Console.ReadLine(), out menu);
+
+                if (!isValid || menu < 0 || menu >= SoMenu)
+                {
+                    Console.WriteLine("Giá trị nhập không hợp lệ, vui lòng nhập lại!");
+                    isValid = false;
+                }
+
+            } while (!isValid);
 
             return (ChucNangNhap)menu;
         }
@@ -45,7 +54,8 @@ namespace Mang1ChieuSoNguyen
             {
                 case ChucNangNhap.Thoat:
                     Console.WriteLine("Kết thúc chương trình nhập!");
-                    return;
+                    Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
+                    break;
                 case ChucNangNhap.Nhap:
                     MangNguyen.Nhap();
                     break;
@@ -64,7 +74,10 @@ namespace Mang1ChieuSoNguyen
             do
             {
                 menu = this.Select();
-                this.Process(menu);
+                if (menu != 0)
+                {
+                    this.Process(menu);
+                }
             } while (menu != ChucNangNhap.Thoat);
         }
     }
