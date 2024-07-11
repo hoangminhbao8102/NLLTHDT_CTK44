@@ -10,8 +10,9 @@ namespace QuanLyMayTinh
     {
         float gia; //field
         string hangSX;
+        float tocDo; // thêm thuộc tính Tốc độ
 
-        public float Gia 
+        public float Gia
         {
             get
             {
@@ -23,7 +24,8 @@ namespace QuanLyMayTinh
                 gia = value;
             }
         }
-        public string HangSX 
+
+        public string HangSX
         {
             get
             {
@@ -33,15 +35,30 @@ namespace QuanLyMayTinh
             set
             {
                 hangSX = value;
+                ThuVienDungChung.Them(value);
+            }
+        }
+
+        public float TocDo
+        {
+            get
+            {
+                return tocDo;
+            }
+
+            set
+            {
+                tocDo = value;
             }
         }
 
         public CPU() { }
 
-        public CPU(string hang, float gia)
+        public CPU(string hang, float gia, float tocDo)
         {
             HangSX = hang;
             Gia = gia;
+            TocDo = tocDo;
         }
 
         public CPU(string line)
@@ -49,11 +66,12 @@ namespace QuanLyMayTinh
             string[] s = line.Split(',');
             HangSX = s[1];
             Gia = float.Parse(s[2]);
+            TocDo = float.Parse(s[3]);
         }
 
-        public override string ToString() 
+        public override string ToString()
         {
-            return "CPU hãng " + HangSX + " giá = " + Gia;
+            return "CPU hãng " + HangSX + " giá = " + Gia + " tốc độ = " + TocDo;
         }
     }
 }
