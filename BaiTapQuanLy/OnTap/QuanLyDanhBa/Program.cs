@@ -10,6 +10,13 @@ namespace QuanLyDanhBa
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+
+            MenuDanhBa menu = new MenuDanhBa();
+
+            menu.Run();
+
+            Console.ReadKey();
         }
     }
 }

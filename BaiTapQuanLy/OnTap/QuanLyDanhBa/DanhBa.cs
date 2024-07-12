@@ -16,7 +16,7 @@ namespace QuanLyDanhBa
             danhSachThueBao.Add(tb);
         }
 
-        public void NhapTuFile(string path = @"data.txt")
+        public void NhapTuFile(string path)
         {
             using (StreamReader sr = new StreamReader(path))
             {
@@ -120,16 +120,17 @@ namespace QuanLyDanhBa
             }
         }
 
-        public void HienThiThanhPhoTheoSoLuongThueBao()
+        public IEnumerable<(string ThanhPho, int SoLuong)> HienThiThanhPhoTheoSoLuongThueBao()
         {
-            var thanhPhoCounts = danhSachThueBao.GroupBy(tb => tb.DiaChi.Split(',')[2].Trim()) // Giả sử thành phố nằm ở phần tử thứ 3 của địa chỉ
-                                       .Select(grp => new { ThanhPho = grp.Key, SoLuong = grp.Count() })
-                                       .OrderByDescending(grp => grp.SoLuong);
+            var counts = danhSachThueBao.GroupBy(tb => tb.DiaChi.Split(',')[2].Trim())
+                                        .Select(grp => new
+                                        {
+                                            ThanhPho = grp.Key,
+                                            SoLuong = grp.Count()
+                                        })
+                                        .ToList(); // Make sure to convert it to List or Array
 
-            foreach (var item in thanhPhoCounts)
-            {
-                Console.WriteLine($"Thành phố: {item.ThanhPho}, Số lượng thuê bao: {item.SoLuong}");
-            }
+            return counts.Select(c => (c.ThanhPho, c.SoLuong));
         }
 
         public void TimThangKhongCoDangKy()
