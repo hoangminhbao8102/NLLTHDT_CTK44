@@ -1,33 +1,35 @@
-﻿using System;
+﻿using QuanLyPhanSo.ChucNang;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mang1ChieuSoNguyen
+namespace QuanLyPhanSo.Menu
 {
     class MenuNhap
     {
-        private MangSoNguyen MangNguyen;
+        private MangPhanSo mangPhanSo;
 
         public MenuNhap()
         {
-            MangNguyen = new MangSoNguyen();
+            mangPhanSo = new MangPhanSo();
         }
 
         private void Show()
         {
             Console.Clear();
             Console.WriteLine("====================== MENU NHẬP =================");
-            Console.WriteLine("{0}. Nhập", (int)ChucNangNhap.Nhap);
-            Console.WriteLine("{0}. Nhập ngẫu nhiên", (int)ChucNangNhap.NhapNgauNhien);
-            Console.WriteLine("{0}. Thoát", (int)ChucNangNhap.Thoat);
+            Console.WriteLine("{0}. Nhập", (int)QuanLyPhanSo.ChucNang.ChucNangNhap.Nhap);
+            Console.WriteLine("{0}. Nhập từ file", (int)QuanLyPhanSo.ChucNang.ChucNangNhap.NhapTuFile);
+            Console.WriteLine("{0}. Nhập ngẫu nhiên", (int)QuanLyPhanSo.ChucNang.NhapNgauNhien);
+            Console.WriteLine("{0}. Thoát", (int)QuanLyPhanSo.ChucNang.Thoat);
             Console.WriteLine("==================================================");
         }
 
-        private ChucNangNhap Select()
+        private QuanLyPhanSo.ChucNang.ChucNangNhap Select()
         {
-            int SoMenu = Enum.GetNames(typeof(ChucNangNhap)).Length;
+            int SoMenu = Enum.GetNames(typeof(QuanLyPhanSo.ChucNang.ChucNangNhap)).Length;
 
             int menu;
             bool isValid;
@@ -45,22 +47,25 @@ namespace Mang1ChieuSoNguyen
 
             } while (!isValid);
 
-            return (ChucNangNhap)menu;
+            return (QuanLyPhanSo.ChucNang.ChucNangNhap)menu;
         }
 
-        private void Process(ChucNangNhap menu)
+        private void Process(QuanLyPhanSo.ChucNang.ChucNangNhap menu)
         {
             switch (menu)
             {
-                case ChucNangNhap.Thoat:
+                case QuanLyPhanSo.ChucNang.ChucNangNhap.Thoat:
                     Console.WriteLine("Kết thúc chương trình nhập!");
                     Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
                     break;
-                case ChucNangNhap.Nhap:
-                    MangNguyen.Nhap();
+                case QuanLyPhanSo.ChucNang.ChucNangNhap.Nhap:
+                    mangPhanSo.Nhap();
                     break;
-                case ChucNangNhap.NhapNgauNhien:
-                    MangNguyen.NhapNgauNhien();
+                case QuanLyPhanSo.ChucNang.ChucNangNhap.NhapTuFile:
+                    mangPhanSo.NhapTuFile("Data\\data.txt");
+                    break;
+                case QuanLyPhanSo.ChucNang.ChucNangNhap.NhapNgauNhien:
+                    mangPhanSo.NhapNgauNhien();
                     break;
                 default:
                     Console.WriteLine("Chức năng không được hỗ trợ");
@@ -70,7 +75,7 @@ namespace Mang1ChieuSoNguyen
 
         public void Run()
         {
-            ChucNangNhap menu = ChucNangNhap.Thoat;
+            QuanLyPhanSo.ChucNang.ChucNangNhap menu = QuanLyPhanSo.ChucNang.ChucNangNhap.Thoat;
             do
             {
                 menu = this.Select();
@@ -78,7 +83,7 @@ namespace Mang1ChieuSoNguyen
                 {
                     this.Process(menu);
                 }
-            } while (menu != ChucNangNhap.Thoat);
+            } while (menu != QuanLyPhanSo.ChucNang.ChucNangNhap.Thoat);
         }
     }
 }

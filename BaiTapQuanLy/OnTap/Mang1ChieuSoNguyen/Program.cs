@@ -12,7 +12,7 @@ namespace Mang1ChieuSoNguyen
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            Menu menu = new Menu();
+            MenuSoNguyen menu = new MenuSoNguyen();
 
             menu.Run();
 

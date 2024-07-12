@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Mang1ChieuSoNguyen
 {
-    class MenuThem
+    class MenuThemSoNguyen
     {
         private MangSoNguyen MangNguyen;
 
-        public MenuThem()
+        public MenuThemSoNguyen()
         {
             MangNguyen = new MangSoNguyen();
         }
@@ -18,20 +18,20 @@ namespace Mang1ChieuSoNguyen
         private void Show()
         {
             Console.Clear();
-            Console.WriteLine("====================== MENU THÊM =================");
-            Console.WriteLine("{0}. Thêm phần tử x tại vị trí vt của mảng", (int)ChucNangThem.ThemPhanTuTaiViTri);
-            Console.WriteLine("{0}. Thêm phần tử x vào đầu danh sách của mảng", (int)ChucNangThem.ThemPhanTuDauDanhSach);
-            Console.WriteLine("{0}. Thêm phần tử x vào cuối danh sách của mảng", (int)ChucNangThem.ThemPhanTuCuoiDanhSach);
-            Console.WriteLine("{0}. Thêm một mảng b vào danh sách tại vị trí vt của mảng", (int)ChucNangThem.ThemMotMangVaoDanhSachTaiViTri);
-            Console.WriteLine("{0}. Thêm một mảng b vào đầu danh sách của mảng", (int)ChucNangThem.ThemMotMangVaoDauDanhSach);
-            Console.WriteLine("{0}. Thêm một mảng b vào cuối danh sách của mảng", (int)ChucNangThem.ThemMotMangVaoCuoiDanhSach);
-            Console.WriteLine("{0}. Thoát", (int)ChucNangThem.Thoat);
+            Console.WriteLine("=================== MENU THÊM ====================");
+            Console.WriteLine("{0}. Thêm phần tử x tại vị trí vt của mảng", (int)ChucNangThemSoNguyen.ThemPhanTuTaiViTri);
+            Console.WriteLine("{0}. Thêm phần tử x vào đầu danh sách của mảng", (int)ChucNangThemSoNguyen.ThemPhanTuDauDanhSach);
+            Console.WriteLine("{0}. Thêm phần tử x vào cuối danh sách của mảng", (int)ChucNangThemSoNguyen.ThemPhanTuCuoiDanhSach);
+            Console.WriteLine("{0}. Thêm một mảng b vào danh sách tại vị trí vt của mảng", (int)ChucNangThemSoNguyen.ThemMotMangVaoDanhSachTaiViTri);
+            Console.WriteLine("{0}. Thêm một mảng b vào đầu danh sách của mảng", (int)ChucNangThemSoNguyen.ThemMotMangVaoDauDanhSach);
+            Console.WriteLine("{0}. Thêm một mảng b vào cuối danh sách của mảng", (int)ChucNangThemSoNguyen.ThemMotMangVaoCuoiDanhSach);
+            Console.WriteLine("{0}. Thoát", (int)ChucNangThemSoNguyen.Thoat);
             Console.WriteLine("==================================================");
         }
 
-        private ChucNangThem Select()
+        private ChucNangThemSoNguyen Select()
         {
-            int SoMenu = Enum.GetNames(typeof(ChucNangThem)).Length;
+            int SoMenu = Enum.GetNames(typeof(ChucNangThemSoNguyen)).Length;
 
             int menu;
             bool isValid;
@@ -49,21 +49,21 @@ namespace Mang1ChieuSoNguyen
 
             } while (!isValid);
 
-            return (ChucNangThem)menu;
+            return (ChucNangThemSoNguyen)menu;
         }
 
-        private void Process(ChucNangThem menu)
+        private void Process(ChucNangThemSoNguyen menu)
         {
             int x, vt, lengthb;
             int[] b;
 
             switch (menu)
             {
-                case ChucNangThem.Thoat:
+                case ChucNangThemSoNguyen.Thoat:
                     Console.WriteLine("Kết thúc chương trình thêm!");
                     Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
                     break;
-                case ChucNangThem.ThemPhanTuTaiViTri:
+                case ChucNangThemSoNguyen.ThemPhanTuTaiViTri:
                     Console.Write("Nhập phần tử cần thêm: ");
                     x = int.Parse(Console.ReadLine());
                     Console.Write("Nhập vị trí cần thêm: ");
@@ -77,7 +77,7 @@ namespace Mang1ChieuSoNguyen
                         Console.WriteLine("Thêm phần tử thất bại.");
                     }
                     break;
-                case ChucNangThem.ThemPhanTuDauDanhSach:
+                case ChucNangThemSoNguyen.ThemPhanTuDauDanhSach:
                     Console.Write("Nhập phần tử cần thêm vào đầu danh sách: ");
                     x = int.Parse(Console.ReadLine());
                     if (MangNguyen.ThemPhanTuDauDanhSach(x))
@@ -89,7 +89,7 @@ namespace Mang1ChieuSoNguyen
                         Console.WriteLine("Thêm phần tử thất bại.");
                     }
                     break;
-                case ChucNangThem.ThemPhanTuCuoiDanhSach:
+                case ChucNangThemSoNguyen.ThemPhanTuCuoiDanhSach:
                     Console.Write("Nhập phần tử cần thêm vào cuối danh sách: ");
                     x = int.Parse(Console.ReadLine());
                     if (MangNguyen.ThemPhanTuCuoiDanhSach(x))
@@ -101,7 +101,7 @@ namespace Mang1ChieuSoNguyen
                         Console.WriteLine("Thêm phần tử thất bại.");
                     }
                     break;
-                case ChucNangThem.ThemMotMangVaoDanhSachTaiViTri:
+                case ChucNangThemSoNguyen.ThemMotMangVaoDanhSachTaiViTri:
                     Console.Write("Nhập độ dài mảng cần thêm: ");
                     lengthb = int.Parse(Console.ReadLine());
                     b = new int[lengthb];
@@ -121,7 +121,7 @@ namespace Mang1ChieuSoNguyen
                         Console.WriteLine("Thêm mảng thất bại.");
                     }
                     break;
-                case ChucNangThem.ThemMotMangVaoDauDanhSach:
+                case ChucNangThemSoNguyen.ThemMotMangVaoDauDanhSach:
                     Console.Write("Nhập độ dài mảng cần thêm: ");
                     lengthb = int.Parse(Console.ReadLine());
                     b = new int[lengthb];
@@ -139,7 +139,7 @@ namespace Mang1ChieuSoNguyen
                         Console.WriteLine("Thêm mảng thất bại.");
                     }
                     break;
-                case ChucNangThem.ThemMotMangVaoCuoiDanhSach:
+                case ChucNangThemSoNguyen.ThemMotMangVaoCuoiDanhSach:
                     Console.Write("Nhập độ dài mảng cần thêm: ");
                     lengthb = int.Parse(Console.ReadLine());
                     b = new int[lengthb];
@@ -165,7 +165,7 @@ namespace Mang1ChieuSoNguyen
 
         public void Run()
         {
-            ChucNangThem menu = ChucNangThem.Thoat;
+            ChucNangThemSoNguyen menu = ChucNangThemSoNguyen.Thoat;
             do
             {
                 menu = this.Select();
@@ -173,7 +173,7 @@ namespace Mang1ChieuSoNguyen
                 {
                     this.Process(menu);
                 }
-            } while (menu != ChucNangThem.Thoat);
+            } while (menu != ChucNangThemSoNguyen.Thoat);
         }
     }
 }

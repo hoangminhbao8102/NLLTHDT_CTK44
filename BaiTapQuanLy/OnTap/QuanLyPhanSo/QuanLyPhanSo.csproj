@@ -43,11 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChucNang.cs" />
+    <Compile Include="ChucNang\ChucNangDem.cs" />
+    <Compile Include="ChucNang\ChucNangNhap.cs" />
+    <Compile Include="ChucNang\ChucNangSapXep.cs" />
+    <Compile Include="ChucNang\ChucNangThem.cs" />
+    <Compile Include="ChucNang\ChucNangTimKiem.cs" />
+    <Compile Include="ChucNang\ChucNangTinhToan.cs" />
+    <Compile Include="ChucNang\ChucNangXoa.cs" />
+    <Compile Include="MangPhanSo.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="Menu\MenuNhap.cs" />
+    <Compile Include="PhanSo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\data.txt" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mang1ChieuSoNguyen
+namespace QuanLyPhanSo.ChucNang
 {
-    enum ChucNangSapXep
+    enum ChucNangThem
     {
         Thoat,
-        SapXepTang,
-        SapXepGiam
+        Them,
+        ThemPhanSoTaiViTri,
+        ThemPhanSoDauTien
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mang1ChieuSoNguyen
 {
-    enum ChucNangTimKiem
+    enum ChucNangTimKiemSoNguyen
     {
         Thoat,
         TimViTriDauTien,

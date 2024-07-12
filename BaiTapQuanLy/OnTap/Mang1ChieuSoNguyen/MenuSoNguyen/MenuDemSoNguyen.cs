@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Mang1ChieuSoNguyen
 {
-    class MenuDem
+    class MenuDemSoNguyen
     {
         private MangSoNguyen MangNguyen;
 
-        public MenuDem()
+        public MenuDemSoNguyen()
         {
             MangNguyen = new MangSoNguyen();
         }
@@ -18,20 +18,20 @@ namespace Mang1ChieuSoNguyen
         private void Show()
         {
             Console.Clear();
-            Console.WriteLine("====================== MENU ĐẾM ==================");
-            Console.WriteLine("{0}. Đếm số lần xuất hiện của phần tử x trong mảng", (int)ChucNangDem.DemSoLanXuatHienCuaPhanTu);
-            Console.WriteLine("{0}. Đếm số dương trong mảng", (int)ChucNangDem.DemSoDuong);
-            Console.WriteLine("{0}. Đếm số âm trong mảng", (int)ChucNangDem.DemSoAm);
-            Console.WriteLine("{0}. Đếm số nguyên tố trong mảng", (int)ChucNangDem.DemSoNguyenTo);
-            Console.WriteLine("{0}. Đếm số chẵn trong mảng", (int)ChucNangDem.DemSoChan);
-            Console.WriteLine("{0}. Đếm số lẻ trong mảng", (int)ChucNangDem.DemSoLe);
-            Console.WriteLine("{0}. Thoát", (int)ChucNangDem.Thoat);
+            Console.WriteLine("=================== MENU ĐẾM =====================");
+            Console.WriteLine("{0}. Đếm số lần xuất hiện của phần tử x trong mảng", (int)ChucNangDemSoNguyen.DemSoLanXuatHienCuaPhanTu);
+            Console.WriteLine("{0}. Đếm số dương trong mảng", (int)ChucNangDemSoNguyen.DemSoDuong);
+            Console.WriteLine("{0}. Đếm số âm trong mảng", (int)ChucNangDemSoNguyen.DemSoAm);
+            Console.WriteLine("{0}. Đếm số nguyên tố trong mảng", (int)ChucNangDemSoNguyen.DemSoNguyenTo);
+            Console.WriteLine("{0}. Đếm số chẵn trong mảng", (int)ChucNangDemSoNguyen.DemSoChan);
+            Console.WriteLine("{0}. Đếm số lẻ trong mảng", (int)ChucNangDemSoNguyen.DemSoLe);
+            Console.WriteLine("{0}. Thoát", (int)ChucNangDemSoNguyen.Thoat);
             Console.WriteLine("==================================================");
         }
 
-        private ChucNangDem Select()
+        private ChucNangDemSoNguyen Select()
         {
-            int SoMenu = Enum.GetNames(typeof(ChucNangDem)).Length;
+            int SoMenu = Enum.GetNames(typeof(ChucNangDemSoNguyen)).Length;
 
             int menu;
             bool isValid;
@@ -49,42 +49,42 @@ namespace Mang1ChieuSoNguyen
 
             } while (!isValid);
 
-            return (ChucNangDem)menu;
+            return (ChucNangDemSoNguyen)menu;
         }
 
-        private void Process(ChucNangDem menu)
+        private void Process(ChucNangDemSoNguyen menu)
         {
             int x, count;
 
             switch (menu)
             {
-                case ChucNangDem.Thoat:
+                case ChucNangDemSoNguyen.Thoat:
                     Console.WriteLine("Kết thúc chương trình đếm!");
                     Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
                     break;
-                case ChucNangDem.DemSoLanXuatHienCuaPhanTu:
+                case ChucNangDemSoNguyen.DemSoLanXuatHienCuaPhanTu:
                     Console.Write("Nhập giá trị cần đếm: ");
                     x = int.Parse(Console.ReadLine());
                     count = MangNguyen.DemSoLanXuatHienCuaPhanTu(x);
                     Console.WriteLine("Số lần xuất hiện của phần tử {0} là: {1}", x, count);
                     break;
-                case ChucNangDem.DemSoDuong:
+                case ChucNangDemSoNguyen.DemSoDuong:
                     count = MangNguyen.DemSoDuong();
                     Console.WriteLine("Số lượng số dương trong mảng là: {0}", count);
                     break;
-                case ChucNangDem.DemSoAm:
+                case ChucNangDemSoNguyen.DemSoAm:
                     count = MangNguyen.DemSoAm();
                     Console.WriteLine("Số lượng số âm trong mảng là: {0}", count);
                     break;
-                case ChucNangDem.DemSoNguyenTo:
+                case ChucNangDemSoNguyen.DemSoNguyenTo:
                     count = MangNguyen.DemSoNguyenTo();
                     Console.WriteLine("Số lượng số nguyên tố trong mảng là: {0}", count);
                     break;
-                case ChucNangDem.DemSoChan:
+                case ChucNangDemSoNguyen.DemSoChan:
                     count = MangNguyen.DemSoChan();
                     Console.WriteLine("Số lượng số chẵn trong mảng là: {0}", count);
                     break;
-                case ChucNangDem.DemSoLe:
+                case ChucNangDemSoNguyen.DemSoLe:
                     count = MangNguyen.DemSoLe();
                     Console.WriteLine("Số lượng số lẻ trong mảng là: {0}", count);
                     break;
@@ -96,7 +96,7 @@ namespace Mang1ChieuSoNguyen
 
         public void Run()
         {
-            ChucNangDem menu = ChucNangDem.Thoat;
+            ChucNangDemSoNguyen menu = ChucNangDemSoNguyen.Thoat;
             do
             {
                 menu = this.Select();
@@ -104,7 +104,7 @@ namespace Mang1ChieuSoNguyen
                 {
                     this.Process(menu);
                 }
-            } while (menu != ChucNangDem.Thoat);
+            } while (menu != ChucNangDemSoNguyen.Thoat);
         }
     }
 }

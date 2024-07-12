@@ -43,28 +43,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChucNang.cs" />
-    <Compile Include="ChucNang\ChucNangDem.cs" />
-    <Compile Include="ChucNang\ChucNangNhap.cs" />
-    <Compile Include="ChucNang\ChucNangSapXep.cs" />
-    <Compile Include="ChucNang\ChucNangThem.cs" />
-    <Compile Include="ChucNang\ChucNangTimKiem.cs" />
-    <Compile Include="ChucNang\ChucNangXoa.cs" />
-    <Compile Include="ChucNang\ChucNangXuat.cs" />
+    <Compile Include="ChucNangSoNguyen.cs" />
+    <Compile Include="ChucNangSoNguyen\ChucNangDemSoNguyen.cs" />
+    <Compile Include="ChucNangSoNguyen\ChucNangNhapSoNguyen.cs" />
+    <Compile Include="ChucNangSoNguyen\ChucNangSapXepSoNguyen.cs" />
+    <Compile Include="ChucNangSoNguyen\ChucNangThemSoNguyen.cs" />
+    <Compile Include="ChucNangSoNguyen\ChucNangTimKiemSoNguyen.cs" />
+    <Compile Include="ChucNangSoNguyen\ChucNangXoaSoNguyen.cs" />
+    <Compile Include="ChucNangSoNguyen\ChucNangXuatSoNguyen.cs" />
     <Compile Include="MangSoNguyen.cs" />
-    <Compile Include="Menu.cs" />
-    <Compile Include="Menu\MenuDem.cs" />
-    <Compile Include="Menu\MenuNhap.cs" />
-    <Compile Include="Menu\MenuSapXep.cs" />
-    <Compile Include="Menu\MenuThem.cs" />
-    <Compile Include="Menu\MenuTimKiem.cs" />
-    <Compile Include="Menu\MenuXoa.cs" />
-    <Compile Include="Menu\MenuXuat.cs" />
+    <Compile Include="MenuSoNguyen.cs" />
+    <Compile Include="MenuSoNguyen\MenuDemSoNguyen.cs" />
+    <Compile Include="MenuSoNguyen\MenuNhapSoNguyen.cs" />
+    <Compile Include="MenuSoNguyen\MenuSapXepSoNguyen.cs" />
+    <Compile Include="MenuSoNguyen\MenuThemSoNguyen.cs" />
+    <Compile Include="MenuSoNguyen\MenuTimKiemSoNguyen.cs" />
+    <Compile Include="MenuSoNguyen\MenuXoaSoNguyen.cs" />
+    <Compile Include="MenuSoNguyen\MenuXuatSoNguyen.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

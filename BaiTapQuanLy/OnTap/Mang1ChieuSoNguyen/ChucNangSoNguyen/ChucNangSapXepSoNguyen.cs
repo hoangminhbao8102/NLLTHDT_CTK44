@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace Mang1ChieuSoNguyen
 {
-    enum ChucNangDem
+    enum ChucNangSapXepSoNguyen
     {
         Thoat,
-        DemSoLanXuatHienCuaPhanTu,
-        DemSoDuong,
-        DemSoAm,
-        DemSoNguyenTo,
-        DemSoChan,
-        DemSoLe
+        SapXepTang,
+        SapXepGiam
     }
 }

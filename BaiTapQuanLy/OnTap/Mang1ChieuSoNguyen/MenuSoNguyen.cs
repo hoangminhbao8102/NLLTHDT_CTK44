@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Mang1ChieuSoNguyen
 {
-    class Menu
+    class MenuSoNguyen
     {
         private MangSoNguyen MangNguyen;
 
-        public Menu()
+        public MenuSoNguyen()
         {
             MangNguyen = new MangSoNguyen();
         }
@@ -19,24 +19,24 @@ namespace Mang1ChieuSoNguyen
         {
             Console.Clear();
             Console.WriteLine("====================== MENU ======================");
-            Console.WriteLine("{0}. Nhập liệu", (int)ChucNang.NhapLieu);
-            Console.WriteLine("{0}. Xuất dữ liệu", (int)ChucNang.XuatDuLieu);
-            Console.WriteLine("{0}. Tìm kiếm", (int)ChucNang.TimKiem);
-            Console.WriteLine("{0}. Thêm phần tử", (int)ChucNang.ThemPhanTu);
-            Console.WriteLine("{0}. Xóa phần tử", (int)ChucNang.XoaPhanTu);
-            Console.WriteLine("{0}. Thay thế phần tử", (int)ChucNang.ThayThePhanTu);
-            Console.WriteLine("{0}. Đếm số lượng", (int)ChucNang.DemSoLuong);
-            Console.WriteLine("{0}. Tính toán", (int)ChucNang.TinhToan);
-            Console.WriteLine("{0}. Sắp xếp", (int)ChucNang.SapXep);
-            Console.WriteLine("{0}. Đảo ngược", (int)ChucNang.DaoNguoc);
-            Console.WriteLine("{0}. Kiểm tra", (int)ChucNang.KiemTra);
-            Console.WriteLine("{0}. Thoát", (int)ChucNang.Thoat);
+            Console.WriteLine("{0}. Nhập liệu", (int)ChucNangSoNguyen.NhapLieu);
+            Console.WriteLine("{0}. Xuất dữ liệu", (int)ChucNangSoNguyen.XuatDuLieu);
+            Console.WriteLine("{0}. Tìm kiếm", (int)ChucNangSoNguyen.TimKiem);
+            Console.WriteLine("{0}. Thêm phần tử", (int)ChucNangSoNguyen.ThemPhanTu);
+            Console.WriteLine("{0}. Xóa phần tử", (int)ChucNangSoNguyen.XoaPhanTu);
+            Console.WriteLine("{0}. Thay thế phần tử", (int)ChucNangSoNguyen.ThayThePhanTu);
+            Console.WriteLine("{0}. Đếm số lượng", (int)ChucNangSoNguyen.DemSoLuong);
+            Console.WriteLine("{0}. Tính toán", (int)ChucNangSoNguyen.TinhToan);
+            Console.WriteLine("{0}. Sắp xếp", (int)ChucNangSoNguyen.SapXep);
+            Console.WriteLine("{0}. Đảo ngược", (int)ChucNangSoNguyen.DaoNguoc);
+            Console.WriteLine("{0}. Kiểm tra", (int)ChucNangSoNguyen.KiemTra);
+            Console.WriteLine("{0}. Thoát", (int)ChucNangSoNguyen.Thoat);
             Console.WriteLine("==================================================");
         }
 
-        private ChucNang Select()
+        private ChucNangSoNguyen Select()
         {
-            int SoMenu = Enum.GetNames(typeof(ChucNang)).Length;
+            int SoMenu = Enum.GetNames(typeof(ChucNangSoNguyen)).Length;
 
             int menu;
             bool isValid;
@@ -54,37 +54,37 @@ namespace Mang1ChieuSoNguyen
 
             } while (!isValid);
 
-            return (ChucNang)menu;
+            return (ChucNangSoNguyen)menu;
         }
 
-        private void Process(ChucNang menu)
+        private void Process(ChucNangSoNguyen menu)
         {
             switch (menu)
             {
-                case ChucNang.Thoat:
+                case ChucNangSoNguyen.Thoat:
                     Console.WriteLine("Kết thúc chương trình!");
                     break;
-                case ChucNang.NhapLieu:
-                    MenuNhap menuNhap = new MenuNhap();
+                case ChucNangSoNguyen.NhapLieu:
+                    MenuNhapSoNguyen menuNhap = new MenuNhapSoNguyen();
                     menuNhap.Run();
                     break;
-                case ChucNang.XuatDuLieu:
-                    MenuXuat menuXuat = new MenuXuat();
+                case ChucNangSoNguyen.XuatDuLieu:
+                    MenuXuatSoNguyen menuXuat = new MenuXuatSoNguyen();
                     menuXuat.Run();
                     break;
-                case ChucNang.TimKiem:
-                    MenuTimKiem menuTimKiem = new MenuTimKiem();
+                case ChucNangSoNguyen.TimKiem:
+                    MenuTimKiemSoNguyen menuTimKiem = new MenuTimKiemSoNguyen();
                     menuTimKiem.Run();
                     break;
-                case ChucNang.ThemPhanTu:
-                    MenuThem menuThem = new MenuThem();
+                case ChucNangSoNguyen.ThemPhanTu:
+                    MenuThemSoNguyen menuThem = new MenuThemSoNguyen();
                     menuThem.Run();
                     break;
-                case ChucNang.XoaPhanTu:
-                    MenuXoa menuXoa = new MenuXoa();
+                case ChucNangSoNguyen.XoaPhanTu:
+                    MenuXoaSoNguyen menuXoa = new MenuXoaSoNguyen();
                     menuXoa.Run();
                     break;
-                case ChucNang.ThayThePhanTu:
+                case ChucNangSoNguyen.ThayThePhanTu:
                     Console.Write("Nhập giá trị cần thay thế: ");
                     int cu = int.Parse(Console.ReadLine());
                     Console.Write("Nhập giá trị mới: ");
@@ -98,24 +98,24 @@ namespace Mang1ChieuSoNguyen
                         Console.WriteLine("Thay thế phần tử thất bại.");
                     }
                     break;
-                case ChucNang.DemSoLuong:
-                    MenuDem menuDem = new MenuDem();
+                case ChucNangSoNguyen.DemSoLuong:
+                    MenuDemSoNguyen menuDem = new MenuDemSoNguyen();
                     menuDem.Run();
                     break;
-                case ChucNang.TinhToan:
+                case ChucNangSoNguyen.TinhToan:
                     int tong = MangNguyen.TinhTongCacSoNguyen();
                     Console.WriteLine("Tổng các số nguyên trong mảng là: {0}", tong);
                     break;
-                case ChucNang.SapXep:
-                    MenuSapXep menuSapXep = new MenuSapXep();
+                case ChucNangSoNguyen.SapXep:
+                    MenuSapXepSoNguyen menuSapXep = new MenuSapXepSoNguyen();
                     menuSapXep.Run();
                     break;
-                case ChucNang.DaoNguoc:
+                case ChucNangSoNguyen.DaoNguoc:
                     MangNguyen.DaoNguocMang();
                     Console.WriteLine("Đã đảo ngược mảng.");
                     MangNguyen.Xuat(); // Giả sử MangNguyen có phương thức Xuat() để in mảng ra màn hình
                     break;
-                case ChucNang.KiemTra:
+                case ChucNangSoNguyen.KiemTra:
                     Console.Write("Nhập giá trị cần kiểm tra: ");
                     int x = int.Parse(Console.ReadLine());
                     if (MangNguyen.KiemTra(x))
@@ -135,15 +135,15 @@ namespace Mang1ChieuSoNguyen
 
         public void Run()
         {
-            ChucNang menu = ChucNang.Thoat;
+            ChucNangSoNguyen menu = ChucNangSoNguyen.Thoat;
             do
             {
                 menu = this.Select();
-                if (menu != ChucNang.Thoat)
+                if (menu != ChucNangSoNguyen.Thoat)
                 {
                     this.Process(menu);
                 }
-            } while (menu != ChucNang.Thoat);
+            } while (menu != ChucNangSoNguyen.Thoat);
         }
     }
 }

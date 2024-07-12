@@ -8,7 +8,7 @@ namespace Mang1ChieuSoNguyen
 {
     public class MangSoNguyen
     {
-        private int[] a;
+        private List<int> a;
         private int length;
 
         public int Length
@@ -19,7 +19,7 @@ namespace Mang1ChieuSoNguyen
 
         public MangSoNguyen()
         {
-            a = new int[100];
+            a = new List<int>();
             length = 0;
         }
 
@@ -29,14 +29,15 @@ namespace Mang1ChieuSoNguyen
             length = int.Parse(Console.ReadLine());
             for (int i = 0; i < length; i++)
             {
-                Console.Write(" a[{0}] = ", i);
-                a[i] = int.Parse(Console.ReadLine());
+                Console.Write($"a[{i}] = ");
+                a.Add(int.Parse(Console.ReadLine()));
             }
         }
 
         public void XoaPhanTuDauTien(int x)
         {
-            XoaPhanTuTaiViTri(TimViTriDauTien(x));
+            int index = a.IndexOf(x);
+            if (index != -1) a.RemoveAt(index);
         }
 
         public int TimViTriDauTien(int x)
@@ -76,7 +77,7 @@ namespace Mang1ChieuSoNguyen
             Random r = new Random();
             for (int i = 0; i < length; i++)
             {
-                a[i] = r.Next(100);
+                a.Add(r.Next(100));
             }
         }
 
@@ -653,13 +654,13 @@ namespace Mang1ChieuSoNguyen
 
         public void SapXepTang()
         {
-            Array.Sort(a, 0, length);
+            a.Sort();
         }
 
         public void SapXepGiam()
         {
-            Array.Sort(a, 0, length);
-            Array.Reverse(a, 0, length);
+            a.Sort();
+            a.Reverse();
         }
 
         public void DaoNguocMang()

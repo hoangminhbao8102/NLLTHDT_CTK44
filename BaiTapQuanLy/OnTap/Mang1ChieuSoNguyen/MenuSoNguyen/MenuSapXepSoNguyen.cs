@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Mang1ChieuSoNguyen
 {
-    class MenuSapXep
+    class MenuSapXepSoNguyen
     {
         private MangSoNguyen MangNguyen;
 
-        public MenuSapXep()
+        public MenuSapXepSoNguyen()
         {
             MangNguyen = new MangSoNguyen();
         }
@@ -18,16 +18,16 @@ namespace Mang1ChieuSoNguyen
         private void Show()
         {
             Console.Clear();
-            Console.WriteLine("====================== MENU SẮP XẾP ==============");
-            Console.WriteLine("{0}. Sắp xếp mảng số nguyên theo tăng dần", (int)ChucNangSapXep.SapXepTang);
-            Console.WriteLine("{0}. Sắp xếp mảng số nguyên theo giảm dần", (int)ChucNangSapXep.SapXepGiam);
-            Console.WriteLine("{0}. Thoát", (int)ChucNangSapXep.Thoat);
+            Console.WriteLine("================== MENU SẮP XẾP ==================");
+            Console.WriteLine("{0}. Sắp xếp mảng số nguyên theo tăng dần", (int)ChucNangSapXepSoNguyen.SapXepTang);
+            Console.WriteLine("{0}. Sắp xếp mảng số nguyên theo giảm dần", (int)ChucNangSapXepSoNguyen.SapXepGiam);
+            Console.WriteLine("{0}. Thoát", (int)ChucNangSapXepSoNguyen.Thoat);
             Console.WriteLine("==================================================");
         }
 
-        private ChucNangSapXep Select()
+        private ChucNangSapXepSoNguyen Select()
         {
-            int SoMenu = Enum.GetNames(typeof(ChucNangSapXep)).Length;
+            int SoMenu = Enum.GetNames(typeof(ChucNangSapXepSoNguyen)).Length;
 
             int menu;
             bool isValid;
@@ -45,23 +45,23 @@ namespace Mang1ChieuSoNguyen
 
             } while (!isValid);
 
-            return (ChucNangSapXep)menu;
+            return (ChucNangSapXepSoNguyen)menu;
         }
 
-        private void Process(ChucNangSapXep menu)
+        private void Process(ChucNangSapXepSoNguyen menu)
         {
             switch (menu)
             {
-                case ChucNangSapXep.Thoat:
+                case ChucNangSapXepSoNguyen.Thoat:
                     Console.WriteLine("Kết thúc chương trình sắp xếp!");
                     Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
                     break;
-                case ChucNangSapXep.SapXepTang:
+                case ChucNangSapXepSoNguyen.SapXepTang:
                     MangNguyen.SapXepTang();
                     Console.WriteLine("Đã sắp xếp mảng theo thứ tự tăng dần.");
                     MangNguyen.Xuat(); // Giả sử MangNguyen có phương thức Xuat() để in mảng ra màn hình
                     break;
-                case ChucNangSapXep.SapXepGiam:
+                case ChucNangSapXepSoNguyen.SapXepGiam:
                     MangNguyen.SapXepGiam();
                     Console.WriteLine("Đã sắp xếp mảng theo thứ tự giảm dần.");
                     MangNguyen.Xuat(); // Giả sử MangNguyen có phương thức Xuat() để in mảng ra màn hình
@@ -74,7 +74,7 @@ namespace Mang1ChieuSoNguyen
 
         public void Run()
         {
-            ChucNangSapXep menu = ChucNangSapXep.Thoat;
+            ChucNangSapXepSoNguyen menu = ChucNangSapXepSoNguyen.Thoat;
             do
             {
                 menu = this.Select();
@@ -82,7 +82,7 @@ namespace Mang1ChieuSoNguyen
                 {
                     this.Process(menu);
                 }
-            } while (menu != ChucNangSapXep.Thoat);
+            } while (menu != ChucNangSapXepSoNguyen.Thoat);
         }
     }
 }
