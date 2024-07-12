@@ -55,8 +55,10 @@
     <Compile Include="MenuPhanSo.cs" />
     <Compile Include="MenuPhanSo\MenuDemPhanSo.cs" />
     <Compile Include="MenuPhanSo\MenuNhapPhanSo.cs" />
+    <Compile Include="MenuPhanSo\MenuSapXepPhanSo.cs" />
     <Compile Include="MenuPhanSo\MenuThemPhanSo.cs" />
     <Compile Include="MenuPhanSo\MenuTimKiemPhanSo.cs" />
+    <Compile Include="MenuPhanSo\MenuTinhToanPhanSo.cs" />
     <Compile Include="MenuPhanSo\MenuXoaPhanSo.cs" />
     <Compile Include="PhanSo.cs" />
     <Compile Include="Program.cs" />

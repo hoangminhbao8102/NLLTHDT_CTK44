@@ -29,7 +29,7 @@ namespace QuanLyPhanSo
             Console.WriteLine("{0}. Tìm tất cả các phân số dương.", (int)ChucNangTimKiemPhanSo.TimTatCaPhanSoDuong);
             Console.WriteLine("{0}. Tìm tất cả vị trí của phân số có tử là x.", (int)ChucNangTimKiemPhanSo.TimViTriCuaPhanSo);
             Console.WriteLine("{0}. Tìm vị trí của tất cả phân số âm và dương.", (int)ChucNangTimKiemPhanSo.TimViTriCuaPhanSoAmDuong);
-            Console.WriteLine("{0}. Thoát", (int)ChucNangTimKiemPhanSo.Thoat);
+            Console.WriteLine("{0}. Thoát.", (int)ChucNangTimKiemPhanSo.Thoat);
             Console.WriteLine("==================================================");
         }
 
@@ -114,7 +114,7 @@ namespace QuanLyPhanSo
                     Console.WriteLine("Vị trí của tất cả phân số âm và dương trong mảng: " + string.Join(", ", viTriAmDuong));
                     break;
                 default:
-                    Console.WriteLine("Chức năng không được hỗ trợ");
+                    Console.WriteLine("Chức năng không được hỗ trợ!");
                     break;
             }
         }

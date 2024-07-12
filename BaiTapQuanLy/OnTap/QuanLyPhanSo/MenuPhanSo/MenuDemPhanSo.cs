@@ -23,7 +23,7 @@ namespace QuanLyPhanSo
             Console.WriteLine("{0}. Đếm số lượng phân số dương.", (int)ChucNangDemPhanSo.DemPhanSoDuong);
             Console.WriteLine("{0}. Đếm số lượng phân số có tử là x.", (int)ChucNangDemPhanSo.DemPhanSoCoTuLa);
             Console.WriteLine("{0}. Đếm số lượng phân số có mẫu là x.", (int)ChucNangDemPhanSo.DemPhanSoCoMauLa);
-            Console.WriteLine("{0}. Thoát", (int)ChucNangDemPhanSo.Thoat);
+            Console.WriteLine("{0}. Thoát.", (int)ChucNangDemPhanSo.Thoat);
             Console.WriteLine("==================================================");
         }
 
@@ -80,7 +80,7 @@ namespace QuanLyPhanSo
                     Console.WriteLine("Số lượng phân số có mẫu số {0} trong mảng: {1}", mau, soLuongCoMau);
                     break;
                 default:
-                    Console.WriteLine("Chức năng không được hỗ trợ");
+                    Console.WriteLine("Chức năng không được hỗ trợ!");
                     break;
             }
         }

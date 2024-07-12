@@ -92,7 +92,7 @@ namespace QuanLyPhanSo
                     menuSapXep.Run();
                     break;
                 default:
-                    Console.WriteLine("Chức năng không được hỗ trợ");
+                    Console.WriteLine("Chức năng không được hỗ trợ!");
                     break;
             }
         }

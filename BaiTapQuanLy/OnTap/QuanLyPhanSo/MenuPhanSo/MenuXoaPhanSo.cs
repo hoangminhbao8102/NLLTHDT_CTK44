@@ -31,7 +31,7 @@ namespace QuanLyPhanSo
             Console.WriteLine("{0}. Xóa các phân số tại vị trí được chỉ định.", (int)ChucNangXoaPhanSo.XoaTaiCacViTri);
             Console.WriteLine("{0}. Xóa tất cả các phân số âm trong mảng.", (int)ChucNangXoaPhanSo.XoaTatCaPhanSoAm);
             Console.WriteLine("{0}. Xóa tất cả các phân số dương trong mảng.", (int)ChucNangXoaPhanSo.XoaTatCaPhanSoDuong);
-            Console.WriteLine("{0}. Thoát", (int)ChucNangXoaPhanSo.Thoat);
+            Console.WriteLine("{0}. Thoát.", (int)ChucNangXoaPhanSo.Thoat);
             Console.WriteLine("==================================================");
         }
 
@@ -119,7 +119,7 @@ namespace QuanLyPhanSo
                     mangPhanSo.XoaTatCaPhanSoDuong();
                     break;
                 default:
-                    Console.WriteLine("Chức năng không được hỗ trợ");
+                    Console.WriteLine("Chức năng không được hỗ trợ!");
                     break;
             }
         }

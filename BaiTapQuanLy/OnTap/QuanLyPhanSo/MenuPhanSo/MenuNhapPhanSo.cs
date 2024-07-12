@@ -22,7 +22,7 @@ namespace QuanLyPhanSo
             Console.WriteLine("{0}. Nhập mảng phân số từ bàn phím.", (int)ChucNangNhapPhanSo.Nhap);
             Console.WriteLine("{0}. Nhập mảng phân số từ file", (int)ChucNangNhapPhanSo.NhapTuFile);
             Console.WriteLine("{0}. Nhập ngẫu nhiên", (int)ChucNangNhapPhanSo.NhapNgauNhien);
-            Console.WriteLine("{0}. Nhập mảng phân số ngẫu nhiên", (int)ChucNangNhapPhanSo.Thoat);
+            Console.WriteLine("{0}. Thoát.", (int)ChucNangNhapPhanSo.Thoat);
             Console.WriteLine("==================================================");
         }
 
@@ -68,7 +68,7 @@ namespace QuanLyPhanSo
                     mangPhanSo.NhapNgauNhien();
                     break;
                 default:
-                    Console.WriteLine("Chức năng không được hỗ trợ");
+                    Console.WriteLine("Chức năng không được hỗ trợ!");
                     break;
             }
         }
