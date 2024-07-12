@@ -19,10 +19,10 @@ namespace QuanLyPhanSo
         {
             Console.Clear();
             Console.WriteLine("====================== MENU NHẬP =================");
-            Console.WriteLine("{0}. Nhập", (int)ChucNangNhapPhanSo.Nhap);
-            Console.WriteLine("{0}. Nhập từ file", (int)ChucNangNhapPhanSo.NhapTuFile);
+            Console.WriteLine("{0}. Nhập mảng phân số từ bàn phím.", (int)ChucNangNhapPhanSo.Nhap);
+            Console.WriteLine("{0}. Nhập mảng phân số từ file", (int)ChucNangNhapPhanSo.NhapTuFile);
             Console.WriteLine("{0}. Nhập ngẫu nhiên", (int)ChucNangNhapPhanSo.NhapNgauNhien);
-            Console.WriteLine("{0}. Thoát", (int)ChucNangNhapPhanSo.Thoat);
+            Console.WriteLine("{0}. Nhập mảng phân số ngẫu nhiên", (int)ChucNangNhapPhanSo.Thoat);
             Console.WriteLine("==================================================");
         }
 
@@ -56,6 +56,7 @@ namespace QuanLyPhanSo
                 case ChucNangNhapPhanSo.Thoat:
                     Console.WriteLine("Kết thúc chương trình nhập!");
                     Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
+                    Console.ReadKey();
                     break;
                 case ChucNangNhapPhanSo.Nhap:
                     mangPhanSo.Nhap();

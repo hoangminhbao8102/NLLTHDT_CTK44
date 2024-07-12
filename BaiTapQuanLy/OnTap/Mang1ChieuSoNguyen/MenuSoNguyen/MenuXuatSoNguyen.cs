@@ -55,6 +55,7 @@ namespace Mang1ChieuSoNguyen
                 case ChucNangXuatSoNguyen.Thoat:
                     Console.WriteLine("Kết thúc chương trình xuất!");
                     Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
+                    Console.ReadKey();
                     break;
                 case ChucNangXuatSoNguyen.Xuat:
                     MangNguyen.Xuat();

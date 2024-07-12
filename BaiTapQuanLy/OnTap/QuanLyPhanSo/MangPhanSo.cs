@@ -51,6 +51,15 @@ namespace QuanLyPhanSo
             }
         }
 
+        public PhanSo NhapPhanSo()
+        {
+            Console.Write("Nhập tử số: ");
+            int tu = int.Parse(Console.ReadLine());
+            Console.Write("Nhập mẫu số: ");
+            int mau = int.Parse(Console.ReadLine());
+            return new PhanSo(tu, mau);
+        }
+
         public void NhapNgauNhien()
         {
             Console.Write("Nhập vào chiều dài mảng: ");
@@ -152,6 +161,20 @@ namespace QuanLyPhanSo
             }
             return positions;
         }
+
+        public List<int> TimViTriCuaPhanSoAmDuong()
+        {
+            List<int> positions = new List<int>();
+            for (int i = 0; i < _phanSos.Count; i++)
+            {
+                if (_phanSos[i].Tu < 0 || _phanSos[i].Tu > 0)  // Giả sử phân số âm và dương được định nghĩa bởi tử số
+                {
+                    positions.Add(i);
+                }
+            }
+            return positions;
+        }
+
 
         public int TinhTongTatCaPhanSoAm()
         {

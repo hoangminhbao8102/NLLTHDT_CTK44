@@ -71,6 +71,7 @@ namespace Mang1ChieuSoNguyen
                 case ChucNangTimKiemSoNguyen.Thoat:
                     Console.WriteLine("Kết thúc chương trình tìm kiếm!");
                     Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
+                    Console.ReadKey();
                     break;
                 case ChucNangTimKiemSoNguyen.TimViTriDauTien:
                     Console.Write("Nhập giá trị cần tìm: ");

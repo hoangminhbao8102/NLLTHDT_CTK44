@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\OnTap\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6DE8B66-5872-4F9C-BCBE-BAE9D53F8DF1}|QuanLyPhanSo\\QuanLyPhanSo.csproj|e:\\nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\nllthdt_ctk44\\baitapquanly\\ontap\\quanlyphanso\\menuphanso\\menunhapphanso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6DE8B66-5872-4F9C-BCBE-BAE9D53F8DF1}|QuanLyPhanSo\\QuanLyPhanSo.csproj|solutionrelative:quanlyphanso\\menuphanso\\menunhapphanso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6DE8B66-5872-4F9C-BCBE-BAE9D53F8DF1}|QuanLyPhanSo\\QuanLyPhanSo.csproj|e:\\nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\nllthdt_ctk44\\baitapquanly\\ontap\\quanlyphanso\\menuphanso\\menuthemphanso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6DE8B66-5872-4F9C-BCBE-BAE9D53F8DF1}|QuanLyPhanSo\\QuanLyPhanSo.csproj|solutionrelative:quanlyphanso\\menuphanso\\menuthemphanso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6DE8B66-5872-4F9C-BCBE-BAE9D53F8DF1}|QuanLyPhanSo\\QuanLyPhanSo.csproj|e:\\nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\nllthdt_ctk44\\baitapquanly\\ontap\\quanlyphanso\\menuphanso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E6DE8B66-5872-4F9C-BCBE-BAE9D53F8DF1}|QuanLyPhanSo\\QuanLyPhanSo.csproj|E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\OnTap\\quanlyphanso\\menuphanso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6DE8B66-5872-4F9C-BCBE-BAE9D53F8DF1}|QuanLyPhanSo\\QuanLyPhanSo.csproj|solutionrelative:quanlyphanso\\menuphanso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6DE8B66-5872-4F9C-BCBE-BAE9D53F8DF1}|QuanLyPhanSo\\QuanLyPhanSo.csproj|e:\\nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\nllthdt_ctk44\\baitapquanly\\ontap\\quanlyphanso\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6DE8B66-5872-4F9C-BCBE-BAE9D53F8DF1}|QuanLyPhanSo\\QuanLyPhanSo.csproj|solutionrelative:quanlyphanso\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MenuThemPhanSo.cs",
-              "DocumentMoniker": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\OnTap\\QuanLyPhanSo\\MenuPhanSo\\MenuThemPhanSo.cs",
-              "RelativeDocumentMoniker": "QuanLyPhanSo\\MenuPhanSo\\MenuThemPhanSo.cs",
-              "ToolTip": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\OnTap\\QuanLyPhanSo\\MenuPhanSo\\MenuThemPhanSo.cs",
-              "RelativeToolTip": "QuanLyPhanSo\\MenuPhanSo\\MenuThemPhanSo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T02:59:46.829Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MenuNhapPhanSo.cs",
-              "DocumentMoniker": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\OnTap\\QuanLyPhanSo\\MenuPhanSo\\MenuNhapPhanSo.cs",
-              "RelativeDocumentMoniker": "QuanLyPhanSo\\MenuPhanSo\\MenuNhapPhanSo.cs",
-              "ToolTip": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\OnTap\\QuanLyPhanSo\\MenuPhanSo\\MenuNhapPhanSo.cs",
-              "RelativeToolTip": "QuanLyPhanSo\\MenuPhanSo\\MenuNhapPhanSo.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAmwA4AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T02:55:44.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "MenuPhanSo.cs",
               "DocumentMoniker": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\OnTap\\QuanLyPhanSo\\MenuPhanSo.cs",
               "RelativeDocumentMoniker": "QuanLyPhanSo\\MenuPhanSo.cs",
               "ToolTip": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\OnTap\\QuanLyPhanSo\\MenuPhanSo.cs",
               "RelativeToolTip": "QuanLyPhanSo\\MenuPhanSo.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAowEYAAAAiAAAA",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAswFIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-12T02:46:01.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\OnTap\\QuanLyPhanSo\\Program.cs",
-              "RelativeDocumentMoniker": "QuanLyPhanSo\\Program.cs",
-              "ToolTip": "E:\\Nguy\u00EAn l\u00FD l\u1EADp tr\u00ECnh h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\NLLTHDT_CTK44\\BaiTapQuanLy\\OnTap\\QuanLyPhanSo\\Program.cs",
-              "RelativeToolTip": "QuanLyPhanSo\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T02:45:15.355Z",
               "EditorCaption": ""
             }
           ]

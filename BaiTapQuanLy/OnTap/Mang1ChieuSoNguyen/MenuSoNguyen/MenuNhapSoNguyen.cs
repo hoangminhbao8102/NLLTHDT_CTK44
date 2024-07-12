@@ -55,6 +55,7 @@ namespace Mang1ChieuSoNguyen
                 case ChucNangNhapSoNguyen.Thoat:
                     Console.WriteLine("Kết thúc chương trình nhập!");
                     Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
+                    Console.ReadKey();
                     break;
                 case ChucNangNhapSoNguyen.Nhap:
                     MangNguyen.Nhap();

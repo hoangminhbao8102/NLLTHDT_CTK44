@@ -62,6 +62,7 @@ namespace Mang1ChieuSoNguyen
                 case ChucNangThemSoNguyen.Thoat:
                     Console.WriteLine("Kết thúc chương trình thêm!");
                     Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
+                    Console.ReadKey();
                     break;
                 case ChucNangThemSoNguyen.ThemPhanTuTaiViTri:
                     Console.Write("Nhập phần tử cần thêm: ");

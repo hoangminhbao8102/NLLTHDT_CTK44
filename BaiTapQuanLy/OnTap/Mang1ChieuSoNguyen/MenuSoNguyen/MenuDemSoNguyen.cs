@@ -61,6 +61,7 @@ namespace Mang1ChieuSoNguyen
                 case ChucNangDemSoNguyen.Thoat:
                     Console.WriteLine("Kết thúc chương trình đếm!");
                     Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
+                    Console.ReadKey();
                     break;
                 case ChucNangDemSoNguyen.DemSoLanXuatHienCuaPhanTu:
                     Console.Write("Nhập giá trị cần đếm: ");

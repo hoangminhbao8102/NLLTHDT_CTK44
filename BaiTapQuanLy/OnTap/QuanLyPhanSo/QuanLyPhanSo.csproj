@@ -53,8 +53,11 @@
     <Compile Include="ChucNangPhanSo\ChucNangXoaPhanSo.cs" />
     <Compile Include="MangPhanSo.cs" />
     <Compile Include="MenuPhanSo.cs" />
+    <Compile Include="MenuPhanSo\MenuDemPhanSo.cs" />
     <Compile Include="MenuPhanSo\MenuNhapPhanSo.cs" />
     <Compile Include="MenuPhanSo\MenuThemPhanSo.cs" />
+    <Compile Include="MenuPhanSo\MenuTimKiemPhanSo.cs" />
+    <Compile Include="MenuPhanSo\MenuXoaPhanSo.cs" />
     <Compile Include="PhanSo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

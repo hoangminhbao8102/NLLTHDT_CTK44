@@ -55,6 +55,7 @@ namespace Mang1ChieuSoNguyen
                 case ChucNangSapXepSoNguyen.Thoat:
                     Console.WriteLine("Kết thúc chương trình sắp xếp!");
                     Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
+                    Console.ReadKey();
                     break;
                 case ChucNangSapXepSoNguyen.SapXepTang:
                     MangNguyen.SapXepTang();

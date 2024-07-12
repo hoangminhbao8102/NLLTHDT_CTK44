@@ -70,6 +70,7 @@ namespace Mang1ChieuSoNguyen
                 case ChucNangXoaSoNguyen.Thoat:
                     Console.WriteLine("Kết thúc chương trình xóa!");
                     Console.WriteLine("Nhấn phím bất kỳ để quay lại menu chính...");
+                    Console.ReadKey();
                     break;
                 case ChucNangXoaSoNguyen.XoaPhanTuDauTien:
                     Console.Write("Nhập phần tử cần xóa: ");
