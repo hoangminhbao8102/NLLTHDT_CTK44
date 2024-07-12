@@ -1,5 +1,4 @@
-﻿using QuanLyPhanSo.Menu;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace QuanLyPhanSo
 {
-    class Menu
+    class MenuPhanSo
     {
         private MangPhanSo mangPhanSo;
 
-        public Menu()
+        public MenuPhanSo()
         {
             mangPhanSo = new MangPhanSo();
         }
@@ -20,20 +19,20 @@ namespace QuanLyPhanSo
         {
             Console.Clear();
             Console.WriteLine("====================== MENU ======================");
-            Console.WriteLine("{0}. Nhập", (int)ChucNang.Nhap);
-            Console.WriteLine("{0}. Xuất", (int)ChucNang.Xuat);
-            Console.WriteLine("{0}. Thêm phần tử", (int)ChucNang.Them);
-            Console.WriteLine("{0}. Xóa phần tử", (int)ChucNang.Xoa);
-            Console.WriteLine("{0}. Tìm kiếm", (int)ChucNang.TimKiem);
-            Console.WriteLine("{0}. Đếm", (int)ChucNang.Dem);
-            Console.WriteLine("{0}. Tính toán", (int)ChucNang.TinhToan);
-            Console.WriteLine("{0}. Sắp xếp", (int)ChucNang.SapXep);
+            Console.WriteLine("{0}. Nhập", (int)ChucNangPhanSo.Nhap);
+            Console.WriteLine("{0}. Xuất", (int)ChucNangPhanSo.Xuat);
+            Console.WriteLine("{0}. Thêm phần tử", (int)ChucNangPhanSo.Them);
+            Console.WriteLine("{0}. Xóa phần tử", (int)ChucNangPhanSo.Xoa);
+            Console.WriteLine("{0}. Tìm kiếm", (int)ChucNangPhanSo.TimKiem);
+            Console.WriteLine("{0}. Đếm", (int)ChucNangPhanSo.Dem);
+            Console.WriteLine("{0}. Tính toán", (int)ChucNangPhanSo.TinhToan);
+            Console.WriteLine("{0}. Sắp xếp", (int)ChucNangPhanSo.SapXep);
             Console.WriteLine("==================================================");
         }
 
-        private ChucNang Select()
+        private ChucNangPhanSo Select()
         {
-            int SoMenu = Enum.GetNames(typeof(ChucNang)).Length;
+            int SoMenu = Enum.GetNames(typeof(ChucNangPhanSo)).Length;
 
             int menu;
             bool isValid;
@@ -51,45 +50,45 @@ namespace QuanLyPhanSo
 
             } while (!isValid);
 
-            return (ChucNang)menu;
+            return (ChucNangPhanSo)menu;
         }
 
-        private void Process(ChucNang menu)
+        private void Process(ChucNangPhanSo menu)
         {
             switch (menu)
             {
-                case ChucNang.Thoat:
+                case ChucNangPhanSo.Thoat:
                     Console.WriteLine("Kết thúc chương trình!");
                     break;
-                case ChucNang.Nhap:
-                    MenuNhap menuNhap = new MenuNhap();
+                case ChucNangPhanSo.Nhap:
+                    MenuNhapPhanSo menuNhap = new MenuNhapPhanSo();
                     menuNhap.Run();
                     break;
-                case ChucNang.Xuat:
+                case ChucNangPhanSo.Xuat:
                     mangPhanSo.Xuat();
                     break;
-                case ChucNang.Them:
-                    MenuThem menuThem = new MenuThem();
+                case ChucNangPhanSo.Them:
+                    MenuThemPhanSo menuThem = new MenuThemPhanSo();
                     menuThem.Run();
                     break;
-                case ChucNang.Xoa:
-                    MenuXoa menuXoa = new MenuXoa();
+                case ChucNangPhanSo.Xoa:
+                    MenuXoaPhanSo menuXoa = new MenuXoaPhanSo();
                     menuXoa.Run();
                     break;
-                case ChucNang.TimKiem:
-                    MenuTimKiem menuTimKiem = new MenuTimKiem();
+                case ChucNangPhanSo.TimKiem:
+                    MenuTimKiemPhanSo menuTimKiem = new MenuTimKiemPhanSo();
                     menuTimKiem.Run();
                     break;
-                case ChucNang.Dem:
-                    MenuDem menuDem = new MenuDem();
+                case ChucNangPhanSo.Dem:
+                    MenuDemPhanSo menuDem = new MenuDemPhanSo();
                     menuDem.Run();
                     break;
-                case ChucNang.TinhToan:
-                    MenuTinhToan menuTinhToan = new MenuTinhToan();
+                case ChucNangPhanSo.TinhToan:
+                    MenuTinhToanPhanSo menuTinhToan = new MenuTinhToanPhanSo();
                     menuTinhToan.Run();
                     break;
-                case ChucNang.SapXep:
-                    MenuSapXep menuSapXep = new MenuSapXep();
+                case ChucNangPhanSo.SapXep:
+                    MenuSapXepPhanSo menuSapXep = new MenuSapXepPhanSo();
                     menuSapXep.Run();
                     break;
                 default:
@@ -100,15 +99,15 @@ namespace QuanLyPhanSo
 
         public void Run()
         {
-            ChucNang menu = ChucNang.Thoat;
+            ChucNangPhanSo menu = ChucNangPhanSo.Thoat;
             do
             {
                 menu = this.Select();
-                if (menu != ChucNang.Thoat)
+                if (menu != ChucNangPhanSo.Thoat)
                 {
                     this.Process(menu);
                 }
-            } while (menu != ChucNang.Thoat);
+            } while (menu != ChucNangPhanSo.Thoat);
         }
     }
 }

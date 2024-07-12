@@ -43,17 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChucNang.cs" />
-    <Compile Include="ChucNang\ChucNangDem.cs" />
-    <Compile Include="ChucNang\ChucNangNhap.cs" />
-    <Compile Include="ChucNang\ChucNangSapXep.cs" />
-    <Compile Include="ChucNang\ChucNangThem.cs" />
-    <Compile Include="ChucNang\ChucNangTimKiem.cs" />
-    <Compile Include="ChucNang\ChucNangTinhToan.cs" />
-    <Compile Include="ChucNang\ChucNangXoa.cs" />
+    <Compile Include="ChucNangPhanSo.cs" />
+    <Compile Include="ChucNangPhanSo\ChucNangDemPhanSo.cs" />
+    <Compile Include="ChucNangPhanSo\ChucNangNhapPhanSo.cs" />
+    <Compile Include="ChucNangPhanSo\ChucNangSapXepPhanSo.cs" />
+    <Compile Include="ChucNangPhanSo\ChucNangThemPhanSo.cs" />
+    <Compile Include="ChucNangPhanSo\ChucNangTimKiemPhanSo.cs" />
+    <Compile Include="ChucNangPhanSo\ChucNangTinhToanPhanSo.cs" />
+    <Compile Include="ChucNangPhanSo\ChucNangXoaPhanSo.cs" />
     <Compile Include="MangPhanSo.cs" />
-    <Compile Include="Menu.cs" />
-    <Compile Include="Menu\MenuNhap.cs" />
+    <Compile Include="MenuPhanSo.cs" />
+    <Compile Include="MenuPhanSo\MenuNhapPhanSo.cs" />
+    <Compile Include="MenuPhanSo\MenuThemPhanSo.cs" />
     <Compile Include="PhanSo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

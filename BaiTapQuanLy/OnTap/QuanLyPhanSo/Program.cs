@@ -12,7 +12,7 @@ namespace QuanLyPhanSo
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            Menu menu = new Menu();
+            MenuPhanSo menu = new MenuPhanSo();
 
             menu.Run();
 

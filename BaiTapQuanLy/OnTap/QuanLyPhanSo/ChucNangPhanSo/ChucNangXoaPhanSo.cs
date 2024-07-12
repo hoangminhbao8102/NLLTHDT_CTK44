@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLyPhanSo.ChucNang
+namespace QuanLyPhanSo
 {
-    enum ChucNangXoa
+    enum ChucNangXoaPhanSo
     {
         Thoat,
         XoaPhanSoTaiViTri,

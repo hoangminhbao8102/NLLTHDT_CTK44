@@ -6,16 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyPhanSo
 {
-    enum ChucNang
+    class MenuThemPhanSo
     {
-        Thoat,
-        Nhap,
-        Xuat,
-        Them,
-        Xoa,
-        TimKiem,
-        Dem,
-        TinhToan,
-        SapXep
     }
 }
