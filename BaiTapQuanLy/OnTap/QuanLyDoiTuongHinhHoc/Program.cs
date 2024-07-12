@@ -10,6 +10,13 @@ namespace QuanLyDoiTuongHinhHoc
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+
+            MenuHinhHoc menu = new MenuHinhHoc();
+
+            menu.Run();
+
+            Console.ReadKey();
         }
     }
 }
