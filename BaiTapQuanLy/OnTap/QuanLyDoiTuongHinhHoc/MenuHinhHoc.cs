@@ -88,9 +88,8 @@ namespace QuanLyDoiTuongHinhHoc
                     MenuDemHinhHoc menuDem = new MenuDemHinhHoc();
                     menuDem.Run();
                     break;
-
                 case ChucNangHinhHoc.HienThi:
-                    MenuHienThiHinhHoc menuThem = new MenuHienThiHinhHoc();
+                    MenuHienThiHinhHoc menuHienThi = new MenuHienThiHinhHoc();
                     menuHienThi.Run();
                     break;
                 case ChucNangHinhHoc.Xoa:

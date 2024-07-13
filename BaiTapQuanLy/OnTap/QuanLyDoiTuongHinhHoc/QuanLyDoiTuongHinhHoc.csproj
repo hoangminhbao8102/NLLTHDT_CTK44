@@ -45,17 +45,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChucNangHinhHoc.cs" />
+    <Compile Include="ChucNangHinhHoc\ChucNangDemHinhHoc.cs" />
+    <Compile Include="ChucNangHinhHoc\ChucNangHienThiHinhHoc.cs" />
+    <Compile Include="ChucNangHinhHoc\ChucNangSapXepHinhHoc.cs" />
+    <Compile Include="ChucNangHinhHoc\ChucNangTimKiemHinhHoc.cs" />
+    <Compile Include="ChucNangHinhHoc\ChucNangTinhTongHinhHoc.cs" />
+    <Compile Include="ChucNangHinhHoc\ChucNangXoaHinhHoc.cs" />
     <Compile Include="DanhSachHinhHoc.cs" />
     <Compile Include="HinhChuNhat.cs" />
     <Compile Include="HinhHoc.cs" />
     <Compile Include="HinhTron.cs" />
     <Compile Include="HinhVuong.cs" />
     <Compile Include="MenuHinhHoc.cs" />
+    <Compile Include="MenuHinhHoc\MenuSapXepHinhHoc.cs" />
+    <Compile Include="MenuHinhHoc\MenuTimKiemHinhHoc.cs" />
+    <Compile Include="MenuHinhHoc\MenuTinhTongHinhHoc.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Data\data.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
