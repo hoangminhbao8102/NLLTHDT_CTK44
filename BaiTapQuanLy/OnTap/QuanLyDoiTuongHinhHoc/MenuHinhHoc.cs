@@ -66,10 +66,14 @@ namespace QuanLyDoiTuongHinhHoc
                     Console.WriteLine("Kết thúc chương trình!");
                     break;
                 case ChucNangHinhHoc.NhapTuFile:
-                    //...
+                    Console.Write("Nhập tên tập tin dữ liệu: ");
+                    string filename = Console.ReadLine();
+                    hinhHoc.NhapTuFile(filename);
+                    Console.WriteLine("Dữ liệu đã được nhập thành công từ file.");
                     break;
                 case ChucNangHinhHoc.Xuat:
-                    //...
+                    Console.WriteLine("Danh sách hình học:");
+                    Console.WriteLine(hinhHoc);
                     break;
                 case ChucNangHinhHoc.TimKiem:
                     MenuTimKiemHinhHoc menuTimKiem = new MenuTimKiemHinhHoc();
@@ -97,19 +101,52 @@ namespace QuanLyDoiTuongHinhHoc
                     menuXoa.Run();
                     break;
                 case ChucNangHinhHoc.ThemHinhTaiViTri:
-                    //...
+                    Console.Write("Nhập vị trí để thêm hình: ");
+                    int viTri = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Chọn loại hình để thêm (1: Hình Tròn, 2: Hình Vuông, 3: Hình Chữ Nhật): ");
+                    int loaiHinh = int.Parse(Console.ReadLine());
+                    HinhHoc hh = null;
+                    switch (loaiHinh)
+                    {
+                        case 1:
+                            Console.Write("Nhập bán kính hình tròn: ");
+                            float r = float.Parse(Console.ReadLine());
+                            hh = new HinhTron(r);
+                            break;
+                        case 2:
+                            Console.Write("Nhập cạnh hình vuông: ");
+                            float a = float.Parse(Console.ReadLine());
+                            hh = new HinhVuong(a);
+                            break;
+                        case 3:
+                            Console.Write("Nhập chiều dài và chiều rộng hình chữ nhật: ");
+                            float l = float.Parse(Console.ReadLine());
+                            float w = float.Parse(Console.ReadLine());
+                            hh = new HinhChuNhat(l, w);
+                            break;
+                    }
+                    if (hh != null)
+                    {
+                        hinhHoc.ThemHinhTaiViTri(viTri, hh);
+                        Console.WriteLine("Hình đã được thêm thành công.");
+                    }
                     break;
                 case ChucNangHinhHoc.GhiDanhSachHinhXuongFile:
-                    //...
+                    hinhHoc.GhiDanhSachHinhXuongFile();
+                    Console.WriteLine("Dữ liệu đã được ghi xuống file.");
                     break;
                 case ChucNangHinhHoc.XuatKetQua:
-                    //...
+                    hinhHoc.XuatKetQua();
                     break;
                 case ChucNangHinhHoc.LuuKetQuaXuongFile:
-                    //...
+                    Console.Write("Nhập tên file để lưu kết quả: ");
+                    string saveFilename = Console.ReadLine();
+                    hinhHoc.LuuKetQuaXuongFile(saveFilename);
+                    Console.WriteLine("Kết quả đã được lưu vào file.");
                     break;
                 case ChucNangHinhHoc.InKetQua:
-                    //...
+                    hinhHoc.InKetQua();
+                    Console.WriteLine("Kết quả đã được in ra máy in.");
                     break;
                 default:
                     Console.WriteLine("Chức năng không được hỗ trợ!");

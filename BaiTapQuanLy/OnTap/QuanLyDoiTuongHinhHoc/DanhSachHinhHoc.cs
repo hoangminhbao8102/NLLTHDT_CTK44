@@ -17,6 +17,11 @@ namespace QuanLyDoiTuongHinhHoc
             collection.Add(hh);
         }
 
+        public int SoLuong()
+        {
+            return collection.Count;
+        }
+
         public HinhHoc LayPhanTuCuoi()
         {
             if (collection.Count > 0)

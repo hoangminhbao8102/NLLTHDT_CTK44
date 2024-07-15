@@ -57,9 +57,12 @@
     <Compile Include="HinhTron.cs" />
     <Compile Include="HinhVuong.cs" />
     <Compile Include="MenuHinhHoc.cs" />
+    <Compile Include="MenuHinhHoc\MenuDemHinhHoc.cs" />
+    <Compile Include="MenuHinhHoc\MenuHienThiHinhHoc.cs" />
     <Compile Include="MenuHinhHoc\MenuSapXepHinhHoc.cs" />
     <Compile Include="MenuHinhHoc\MenuTimKiemHinhHoc.cs" />
     <Compile Include="MenuHinhHoc\MenuTinhTongHinhHoc.cs" />
+    <Compile Include="MenuHinhHoc\MenuXoaHinhHoc.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
