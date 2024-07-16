@@ -43,15 +43,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChucNangMayTinh.cs" />
+    <Compile Include="ChucNangMayTinh\ChucNangCapNhatMayTinh.cs" />
+    <Compile Include="ChucNangMayTinh\ChucNangHienThiMayTinh.cs" />
+    <Compile Include="ChucNangMayTinh\ChucNangSapXepMayTinh.cs" />
+    <Compile Include="ChucNangMayTinh\ChucNangThemMayTinh.cs" />
+    <Compile Include="ChucNangMayTinh\ChucNangTimKiemMayTinh.cs" />
+    <Compile Include="ChucNangMayTinh\ChucNangXoaMayTinh.cs" />
     <Compile Include="CPU.cs" />
+    <Compile Include="DanhSachMayTinh.cs" />
     <Compile Include="IThietBi.cs" />
+    <Compile Include="MayTinh.cs" />
+    <Compile Include="MenuMayTinh.cs" />
+    <Compile Include="MenuMayTinh\MenuCapNhatMayTinh.cs" />
+    <Compile Include="MenuMayTinh\MenuHienThiMayTinh.cs" />
+    <Compile Include="MenuMayTinh\MenuSapXepMayTinh.cs" />
+    <Compile Include="MenuMayTinh\MenuThemMayTinh.cs" />
+    <Compile Include="MenuMayTinh\MenuTimKiemMayTinh.cs" />
+    <Compile Include="MenuMayTinh\MenuXoaMayTinh.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RAM.cs" />
+    <Compile Include="ThietBiFactory.cs" />
     <Compile Include="ThuVienDungChung.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyMayTinh
 {
-    interface IThietBi
+    public interface IThietBi
     {
         float Gia { get; set; }
         string HangSX { get; set; }

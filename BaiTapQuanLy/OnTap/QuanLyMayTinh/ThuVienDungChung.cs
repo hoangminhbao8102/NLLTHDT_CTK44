@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyMayTinh
 {
-    class ThuVienDungChung
+    public class ThuVienDungChung
     {
         private static List<string> dsHang = new List<string>();
         private static object lockObject = new object();

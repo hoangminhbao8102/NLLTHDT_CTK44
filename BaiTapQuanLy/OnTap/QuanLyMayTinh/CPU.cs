@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyMayTinh
 {
-    class CPU : IThietBi
+    public class CPU : IThietBi
     {
         float gia;
         string hangSX;

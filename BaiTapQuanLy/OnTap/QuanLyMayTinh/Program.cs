@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace QuanLyMayTinh
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+
+            MenuMayTinh menu = new MenuMayTinh();
+
+            menu.Run();
+
+            Console.ReadKey();
         }
     }
 }
